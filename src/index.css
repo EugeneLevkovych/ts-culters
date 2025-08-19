@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: #cadcae;
+  /* background: #fff; */
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./fonts/PlusJakartaSans-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./fonts/PlusJakartaSans-Bold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./fonts/PlusJakartaSans-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-white1: #d1d1d1;
+  --color-blue1: #1154d4;
+  --color-blue2: #1a71f6;
+  --color-grey1: #323130;
+  --color-grey2: #737373;
+  --color-grey3: #333;
+  --color-grey4: #d1d1d1;
+}
+
+@utility form-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+}
