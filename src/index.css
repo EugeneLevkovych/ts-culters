@@ -37,6 +37,9 @@ body {
   --color-grey2: #737373;
   --color-grey3: #333;
   --color-grey4: #d1d1d1;
+  --color-grey5: #b0b0b0;
+  --color-grey6: #949494;
+  --color-grey7: #454545;
 }
 
 @utility form-text {
@@ -45,10 +48,9 @@ body {
   line-height: 1.5;
 }
 
-@utility form-placeholder {
+@utility my-placeholder {
   &::placeholder {
     font-size: 14px;
     line-height: 1.5;
-    color: #737373;
   }
 }

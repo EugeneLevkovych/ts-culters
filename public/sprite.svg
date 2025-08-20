@@ -44,7 +44,7 @@
 <symbol id="icon-filter-list" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.8667" d="M5.334 9.333h21.333M9.334 16h13.333M14.667 22.667h2.667"></path>
 </symbol>
-<symbol id="icon-home-2" viewBox="0 0 32 32">
+<symbol id="icon-home" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.8667" d="M18.667 26.667v-8c0-1.473-1.194-2.667-2.667-2.667s-2.667 1.194-2.667 2.667v8M14.644 4.8l-8 4.722c-0.813 0.48-1.311 1.353-1.311 2.296v12.181c0 1.473 1.194 2.667 2.667 2.667h16c1.473 0 2.667-1.194 2.667-2.667v-12.181c0-0.944-0.499-1.817-1.311-2.296l-8-4.722c-0.836-0.494-1.875-0.494-2.711 0z"></path>
 </symbol>
 <symbol id="icon-line-chart" viewBox="0 0 32 32">
@@ -67,7 +67,7 @@
 <path d="M16 29.333c7.364 0 13.333-5.97 13.333-13.333s-5.97-13.333-13.333-13.333c-7.364 0-13.333 5.97-13.333 13.333s5.97 13.333 13.333 13.333z"></path>
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.6667" d="M16 2.333c7.548 0 13.667 6.119 13.667 13.667s-6.119 13.667-13.667 13.667c-7.548 0-13.667-6.119-13.667-13.667s6.119-13.667 13.667-13.667z"></path>
 </symbol>
-<symbol id="icon-Panel-close" viewBox="0 0 31 32">
+<symbol id="icon-panel-close" viewBox="0 0 31 32">
 <path d="M26.88 4.48h-23.040c-1.056 0-1.92 0.864-1.92 1.92v19.2c0 1.056 0.864 1.92 1.92 1.92h23.040c1.056 0 1.92-0.864 1.92-1.92v-19.2c0-1.056-0.864-1.92-1.92-1.92zM9.6 25.6h-5.76v-19.2h5.76v19.2zM26.88 15.040h-9.792l3.456-3.456-1.344-1.344-5.76 5.76 5.76 5.76 1.344-1.344-3.456-3.456h9.792v8.64h-15.36v-19.2h15.36v8.64z"></path>
 </symbol>
 <symbol id="icon-search" viewBox="0 0 31 32">

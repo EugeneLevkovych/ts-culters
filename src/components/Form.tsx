@@ -37,7 +37,7 @@ const Form = () => {
       </label>
       <div className="relative mb-4">
         <input
-          className="w-full text-sm leading-[1.5] border border-grey4 form-placeholder px-4 py-[15.5px] rounded-xl focus:border-blue2 focus:ring-1 focus:ring-blue2 outline-none"
+          className="w-full text-sm leading-[1.5] border border-grey4 my-placeholder placeholder:text-grey2 px-4 py-[15.5px] rounded-xl focus:border-blue2 focus:ring-1 focus:ring-blue2 outline-none"
           id="email"
           type="email"
           placeholder="email"
@@ -54,7 +54,7 @@ const Form = () => {
       </label>
       <div className="relative mb-4">
         <input
-          className="w-full text-sm leading-[1.5] border border-grey4 form-placeholder px-4 py-[15.5px] rounded-xl"
+          className="w-full text-sm leading-[1.5] border border-grey4 my-placeholder placeholder:text-grey2 px-4 py-[15.5px] rounded-xl"
           id="password"
           type="password"
           placeholder="input password"
