@@ -44,3 +44,11 @@ body {
   font-size: 14px;
   line-height: 1.5;
 }
+
+@utility form-placeholder {
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #737373;
+  }
+}
