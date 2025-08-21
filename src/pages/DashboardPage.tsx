@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router";
 import Header from "../components/Header";
 import Total from "../components/Total";
+import SalesTarget from "../components/SalesTarget";
+import YourSales from "../components/YourSales";
 
 const DashboardPage = () => {
   const navigate = useNavigate();
@@ -28,32 +30,18 @@ const DashboardPage = () => {
             Exit
           </button>
         </div>
-
-        <div className="bg-white rounded-3xl p-5">
-          <label
-            className="font-semibold leading-[1.3] text-grey7 mb-4"
-            htmlFor="sales-target"
-          >
-            Sales Target
-          </label>
-          <div className="flex justify-between">
-            <div>
-              <p className="par-1">In Progress</p>
-              <p className="par-2">$231.132.444</p>
-            </div>
-            <div>
-              <p className="par-1">Sales Target</p>
-              <p className="par-2">$500.000.00</p>
-            </div>
+        <div className="flex gap-5.5">
+          <div className="flex flex-col gap-5.5">
+            <SalesTarget />
+            <YourSales />
           </div>
-          <input className="w-full" type="range" id="sales-target" />
-        </div>
 
-        <div className="flex flex-wrap">
-          <Total />
-          <Total />
-          <Total />
-          <Total />
+          <div className="flex flex-wrap gap-4">
+            <Total />
+            <Total />
+            <Total />
+            <Total />
+          </div>
         </div>
       </div>
     </>
