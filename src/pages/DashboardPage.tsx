@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Total from "../components/Total";
 import SalesTarget from "../components/SalesTarget";
 import YourSales from "../components/YourSales";
+import IncreaseYourSales from "../components/IncreaseYourSales";
 
 const DashboardPage = () => {
   const navigate = useNavigate();
@@ -41,6 +42,7 @@ const DashboardPage = () => {
             <Total />
             <Total />
             <Total />
+            <IncreaseYourSales />
           </div>
         </div>
       </div>
