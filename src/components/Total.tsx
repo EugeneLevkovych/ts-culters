@@ -15,10 +15,10 @@ const Total = () => {
         </p>
         <div>
           <div className="flex gap-[2px] justify-end">
-            <svg className="size-5 stroke-grey7 fill-none">
+            <svg className="size-5 stroke-green1 fill-none">
               <use href="./sprite.svg#icon-akar-icons_statistic-down"></use>
             </svg>
-            <p>3.6%</p>
+            <p className="font-bold text-xs text-green1">10.6%</p>
           </div>
           <p className="text-xs leading-[1.4] text-grey2">from last week</p>
         </div>

@@ -36,12 +36,13 @@ const DashboardPage = () => {
             <SalesTarget />
             <YourSales />
           </div>
-
-          <div className="flex flex-wrap gap-4">
-            <Total />
-            <Total />
-            <Total />
-            <Total />
+          <div>
+            <div className="flex flex-wrap gap-4 mb-5">
+              <Total />
+              <Total />
+              <Total />
+              <Total />
+            </div>
             <IncreaseYourSales />
           </div>
         </div>

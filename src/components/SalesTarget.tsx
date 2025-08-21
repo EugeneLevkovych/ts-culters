@@ -1,6 +1,6 @@
 const SalesTarget = () => {
   return (
-    <div className="max-w-139.5 w-full h-38.5 bg-white rounded-3xl p-5">
+    <div className="max-w-139.5 w-full h-[155px] bg-white rounded-3xl p-5">
       <label
         className="font-semibold leading-[1.3] text-grey7 mb-4"
         htmlFor="sales-target"

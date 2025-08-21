@@ -43,7 +43,9 @@ body {
   --color-grey8: #f7f7f7;
   --color-grey9: #2a2a2a;
   --color-grey10: #888;
+  --color-grey11: #3d3d3d;
   --color-lime-green: #bcf328;
+  --color-green1: #04910c;
 }
 
 @utility form-text {
