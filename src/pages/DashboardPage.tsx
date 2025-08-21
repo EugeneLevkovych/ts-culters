@@ -4,6 +4,8 @@ import Total from "../components/Total";
 import SalesTarget from "../components/SalesTarget";
 import YourSales from "../components/YourSales";
 import IncreaseYourSales from "../components/IncreaseYourSales";
+import Map from "../components/Map";
+import ProductPopular from "../components/ProductPopular";
 
 const DashboardPage = () => {
   const navigate = useNavigate();
@@ -31,7 +33,7 @@ const DashboardPage = () => {
             Exit
           </button>
         </div>
-        <div className="flex gap-5.5">
+        <div className="flex gap-5.5 mb-5.5">
           <div className="flex flex-col gap-5.5">
             <SalesTarget />
             <YourSales />
@@ -45,6 +47,10 @@ const DashboardPage = () => {
             </div>
             <IncreaseYourSales />
           </div>
+        </div>
+        <div className="flex gap-5.5">
+          <Map />
+          <ProductPopular />
         </div>
       </div>
     </>
