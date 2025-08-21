@@ -93,5 +93,20 @@
 <symbol id="icon-check-circle-1" viewBox="0 0 31 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.56" d="M20.48 12.16l-7.68 8.32-3.2-3.2M15.36 27.52c6.362 0 11.52-5.158 11.52-11.52s-5.158-11.52-11.52-11.52c-6.362 0-11.52 5.158-11.52 11.52s5.158 11.52 11.52 11.52z"></path>
 </symbol>
+<symbol id="icon-akar-icons_statistic-down" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="5.759" stroke-width="2.24" d="M5.466 7.082l4.811 7.666 7.666-4.811 7.217 11.5"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.24" d="M20.479 20.366l4.679 1.071 1.071-4.679"></path>
+</symbol>
+<symbol id="icon-akar-icons_statistic-up" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="5.759" stroke-width="2.24" d="M5.685 24.671l4.526-7.838 7.838 4.525 6.788-11.758"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.24" d="M20.2 10.842l4.636-1.242 1.242 4.636"></path>
+</symbol>
+<symbol id="icon-arrow-up-right" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M9.333 22.667l13.333-13.333"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M9.333 9.333h13.333v13.333"></path>
+</symbol>
+<symbol id="icon-filter" viewBox="0 0 31 32">
+<path d="M12.253 21.841c0 0.302 0.242 0.545 0.542 0.545h4.473c0.3 0 0.542-0.244 0.542-0.545v-3.341h-5.557v3.341zM21.306 10.182h-12.549c-0.418 0-0.678 0.455-0.469 0.818l3.772 6.409h5.945l3.772-6.409c0.206-0.363-0.055-0.818-0.472-0.818z"></path>
+</symbol>
 </defs>
 </svg>
