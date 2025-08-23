@@ -32,12 +32,12 @@ const Form = () => {
         </div>
       )}
 
-      <label className="form-text text-grey1 mb-1.5" htmlFor="email">
+      <label className="form-text text-gray1 mb-1.5" htmlFor="email">
         email
       </label>
       <div className="relative mb-4">
         <input
-          className="w-full text-sm leading-[1.5] border border-grey4 my-placeholder placeholder:text-grey2 px-4 py-[15.5px] rounded-xl focus:border-blue2 focus:ring-1 focus:ring-blue2 outline-none"
+          className="w-full text-sm leading-[1.5] border border-gray4 my-placeholder placeholder:text-gray2 px-4 py-[15.5px] rounded-xl focus:border-blue2 focus:ring-1 focus:ring-blue2 outline-none"
           id="email"
           type="email"
           placeholder="email"
@@ -45,16 +45,16 @@ const Form = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <svg className="absolute top-4 right-4 size-6 fill-transparent stroke-grey4">
+        <svg className="absolute top-4 right-4 size-6 fill-transparent stroke-gray4">
           <use href="./sprite.svg#icon-check-circle"></use>
         </svg>
       </div>
-      <label className="form-text text-grey1 mb-1.5" htmlFor="password">
+      <label className="form-text text-gray1 mb-1.5" htmlFor="password">
         password
       </label>
       <div className="relative mb-4">
         <input
-          className="w-full text-sm leading-[1.5] border border-grey4 my-placeholder placeholder:text-grey2 px-4 py-[15.5px] rounded-xl"
+          className="w-full text-sm leading-[1.5] border border-gray4 my-placeholder placeholder:text-gray2 px-4 py-[15.5px] rounded-xl"
           id="password"
           type="password"
           placeholder="input password"
@@ -62,7 +62,7 @@ const Form = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <svg className="absolute top-4 right-4 size-6 fill-transparent stroke-grey4">
+        <svg className="absolute top-4 right-4 size-6 fill-transparent stroke-gray4">
           <use href="./sprite.svg#icon-eye-hidden"></use>
         </svg>
       </div>
@@ -70,7 +70,7 @@ const Form = () => {
       <div className="flex justify-between mb-6">
         <div className="flex gap-1">
           <input type="checkbox" id="remember" />
-          <label className="form-text text-grey3" htmlFor="remember">
+          <label className="form-text text-gray3" htmlFor="remember">
             remember me
           </label>
         </div>

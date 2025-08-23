@@ -5,7 +5,7 @@ const Total = () => {
         <h4 className="font-semibold leading-[1.3] text-grey7">
           Total Ravenue
         </h4>
-        <svg className="size-6 stroke-grey7 fill-none">
+        <svg className="size-6 stroke-gray7 fill-none">
           <use href="./sprite.svg#icon-arrow-up-right"></use>
         </svg>
       </div>
@@ -20,7 +20,7 @@ const Total = () => {
             </svg>
             <p className="font-bold text-xs text-green1">10.6%</p>
           </div>
-          <p className="text-xs leading-[1.4] text-grey2">from last week</p>
+          <p className="text-xs leading-[1.4] text-gray2">from last week</p>
         </div>
       </div>
     </div>

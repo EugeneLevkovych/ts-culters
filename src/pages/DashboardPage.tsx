@@ -18,13 +18,13 @@ const DashboardPage = () => {
   return (
     <>
       <Header />
-      <div className="p-8 bg-grey8">
+      <div className="p-8 bg-gray8">
         <div className="flex justify-between items-center mb-5.5">
           <div>
-            <h2 className="text-3xl font-semibold leading-[1.3] text-grey9">
+            <h2 className="text-3xl font-semibold leading-[1.3] text-gray9">
               Dashboard
             </h2>
-            <p className="text-sm leading-[1.5] text-grey10">dashboard</p>
+            <p className="text-sm leading-[1.5] text-gray10">dashboard</p>
           </div>
           <button
             onClick={handleLogout}

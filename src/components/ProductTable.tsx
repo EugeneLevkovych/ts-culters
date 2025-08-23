@@ -6,7 +6,7 @@ import ProductItem from "./ProductItem";
 const ProductTable = () => {
   return (
     <div className="border border-gray12 rounded-2xl overflow-hidden">
-      <div className="flex bg-grey13 border-b border-grey12">
+      <div className="flex bg-gray13 border-b border-gray12">
         <SortButton title="Product" />
         <SortButton title="Price" />
         <FilterButton title="Sales" />

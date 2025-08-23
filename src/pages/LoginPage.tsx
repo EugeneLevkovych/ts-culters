@@ -7,10 +7,12 @@ const LoginPage = () => {
     <div className="flex">
       <div className="w-1/2 px-22.5 py-[207.5px]">
         <Logo />
-        <h3 className="font-semibold text-3xl leading-[1.5] mb-2">Sign Up</h3>
-        <p className="text-sm leading-[1.5] text-grey2 mb-3">
-          Lorem ipsum dolor sit amet consectetur. Leo eget quam dui in posuere
-          nulla.
+        <h3 className="font-semibold text-3xl leading-[1.5] text-gray1 mb-2">
+          Sign Up
+        </h3>
+        <p className="text-sm leading-[1.5] text-gray2 mb-3">
+          Leo eget quam dui in posuere nulla, email === test@example.com
+          password === 123456
         </p>
         <div className="h-11 flex justify-center items-center border-2  border-blue2 rounded-xl mb-6">
           <div className="flex gap-1.5">
@@ -23,14 +25,14 @@ const LoginPage = () => {
           </div>
         </div>
 
-        <p className="flex items-center mb-6 font-bold text-xs leading-[1.4] text-grey1">
+        <p className="flex items-center mb-6 font-bold text-xs leading-[1.4] text-gray1">
           <span className="flex-grow h-px bg-blue1"></span>
           <span className="px-3">or</span>
           <span className="flex-grow h-px bg-blue1"></span>
         </p>
         <Form />
         <div className="flex justify-center">
-          <p className="text-sm text-grey1">
+          <p className="text-sm text-gray1">
             Do not have account?
             <span>
               <a className="form-text leading-[1.5] text-blue2" href="#">
