@@ -1,8 +1,7 @@
 import { products } from "../data/productData";
 import SortButton from "./SortButton";
 import FilterButton from "./FilterButton";
-
-import Product from "./Product";
+import ProductItem from "./ProductItem";
 
 const ProductTable = () => {
   return (
@@ -15,7 +14,7 @@ const ProductTable = () => {
       </div>
 
       {products.map((product) => (
-        <Product key={product.id} product={product} />
+        <ProductItem key={product.id} product={product} />
       ))}
     </div>
   );

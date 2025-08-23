@@ -1,5 +1,11 @@
 import productImg from "../assets/produkt.png";
-const Product = ({ product }) => {
+import type { Product } from "../types/productType";
+
+interface ProductProps {
+  product: Product;
+}
+
+const ProductItem = ({ product }: ProductProps) => {
   return (
     <div className="flex border-b border-gray13 hover:bg-gray12 transition-colors">
       <div className="w-62.5 flex items-center gap-2 p-3">
@@ -13,15 +19,13 @@ const Product = ({ product }) => {
       </div>
 
       <div className="w-34.5 flex items-center justify-center">
-        <p className="ppoduct-text">${product.price.toFixed(2)}</p>
+        <p className="product-text">${product.price.toFixed(2)}</p>
       </div>
 
-      {/* Sales Column */}
       <div className="flex w-34.5 items-center justify-center">
-        <span className="ppoduct-text">{product.sales.toLocaleString()}</span>
+        <span className="product-text">{product.sales.toLocaleString()}</span>
       </div>
 
-      {/* Status Column */}
       <div className="flex w-34.5 items-center justify-center">
         <div className="px-2 py-1.5 bg-green2 text-green1 font-medium text-xs leading-[1.4] rounded-[10px]">
           {product.status}
@@ -30,4 +34,4 @@ const Product = ({ product }) => {
     </div>
   );
 };
-export default Product;
+export default ProductItem;
