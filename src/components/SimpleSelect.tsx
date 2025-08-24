@@ -1,4 +1,17 @@
-const SimpleSelect = ({ title, icon }) => {
+type IconType =
+  | "home"
+  | "note"
+  | "user-group"
+  | "line-chart"
+  | "Settings"
+  | "help";
+
+interface SimpleSelectProps {
+  title: string;
+  icon: IconType;
+}
+
+const SimpleSelect = ({ title, icon }: SimpleSelectProps) => {
   return (
     <div className="flex gap-2 items-center p-2 mb-2.5 hover:bg-blue4">
       <svg className="size-6 stroke-gray7 fill-transparent">
