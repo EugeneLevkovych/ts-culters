@@ -33,6 +33,7 @@ body {
   --color-blue1: #1154d4;
   --color-blue2: #1a71f6;
   --color-blue3: #184190;
+  --color-blue4: #d9edff;
   --color-gray1: #323130;
   --color-gray2: #737373;
   --color-gray3: #333;
@@ -48,6 +49,7 @@ body {
   --color-gray13: #f6f6f6;
   --color-gray14: #a9a9a9;
   --color-gray15: #b0b0b0;
+  --color-gray16: #727272;
   --color-lime-green: #bcf328;
   --color-green1: #04910c;
   --color-green2: #b2ffb4;
@@ -93,4 +95,10 @@ body {
   line-height: 1.42;
   letter-spacing: 0.01em;
   color: #323130;
+}
+
+@utility category-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #888;
 }

@@ -28,3 +28,10 @@ export const products = [
     status: "Success",
   },
 ];
+
+export const productCategories = [
+  { name: "Sneakers", count: 45 },
+  { name: "Jacket", count: 28 },
+  { name: "T-Shirt", count: 32 },
+  { name: "Bag", count: 14 },
+];
