@@ -23,7 +23,7 @@ const SideBar = () => {
       </div>
       <div className="mb-8 space-y-2.5">
         <h5 className="text-sm leading-[1.5] uppercase px-2">general</h5>
-        <SimpleSelect title="Account & Settings" icon="Settings" />
+        <SimpleSelect title="Account & Settings" icon="settings" />
         <SimpleSelect title="Help" icon="help" />
       </div>
     </div>

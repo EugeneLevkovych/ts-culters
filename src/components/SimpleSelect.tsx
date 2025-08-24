@@ -3,7 +3,7 @@ type IconType =
   | "note"
   | "user-group"
   | "line-chart"
-  | "Settings"
+  | "settings"
   | "help";
 
 interface SimpleSelectProps {
@@ -13,7 +13,7 @@ interface SimpleSelectProps {
 
 const SimpleSelect = ({ title, icon }: SimpleSelectProps) => {
   return (
-    <div className="flex gap-2 items-center p-2 mb-2.5 hover:bg-blue4">
+    <div className="flex gap-2 items-center p-2 mb-2.5 rounded-xl hover:bg-blue4 cursor-pointer">
       <svg className="size-6 stroke-gray7 fill-transparent">
         <use href={`./sprite.svg#icon-${icon}`}></use>
       </svg>

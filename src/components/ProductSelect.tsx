@@ -18,7 +18,7 @@ const ProductSelect = () => {
     <div className="w-62 rounded-xl overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between p-2 hover:bg-blue4 transition-colors duration-200"
+        className="w-full flex items-center justify-between p-2 hover:bg-blue4 transition-colors duration-200 cursor-pointer"
       >
         <div className="flex items-center gap-2">
           <svg className="size-6 stroke-gray7 fill-transparent">
@@ -53,7 +53,7 @@ const ProductSelect = () => {
 
               <button
                 onClick={() => handleCategoryClick(category.name)}
-                className={`w-full text-left px-4 py-3 pl-12 hover:bg-gray8 transition-colors duration-150 ${
+                className={`w-full text-left px-4 py-3 pl-12 hover:bg-gray8 transition-colors duration-150 cursor-pointer ${
                   selectedCategory === category.name
                     ? "text-blue1 font-medium"
                     : "category-text"
