@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="flex px-8 py-[1.6rem]">
+    <div className="px-8 py-[1.6rem]">
       <div className="relative">
         <input
           type="text"

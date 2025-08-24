@@ -3,7 +3,7 @@ import ShowAll from "./ShowAll";
 
 const YourSales = () => {
   return (
-    <div className="w-139.5 p-4 bg-white rounded-3xl">
+    <div className="p-4 bg-white rounded-3xl">
       <div className="flex justify-between mb-3">
         <h5 className="heading">Your Sales this year</h5>
         <ShowAll />
