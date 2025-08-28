@@ -1,0 +1,51 @@
+import { useState } from "react";
+
+interface DarkModeToggleProps {
+  onToggle?: (isDark: boolean) => void;
+  initialValue?: boolean;
+}
+
+const DarkModeToggle = ({
+  onToggle,
+  initialValue = false,
+}: DarkModeToggleProps) => {
+  const [isDark, setIsDark] = useState(initialValue);
+
+  const handleToggle = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    const newValue = !isDark;
+    setIsDark(newValue);
+    onToggle?.(newValue);
+  };
+
+  return (
+    <div className="flex gap-2 items-center p-2 mb-2.5 rounded-xl hover:bg-blue4 cursor-pointer">
+      <svg className="size-6 stroke-gray7 fill-transparent">
+        <use href="./sprite.svg#icon-moon"></use>
+      </svg>
+      <p className="font-bold text-sm leading-[1.5] text-gray7 flex-1">
+        Dark Mode
+      </p>
+
+      <button
+        onClick={handleToggle}
+        className={`
+          relative inline-flex h-5 w-9 items-center rounded-full 
+          transition-colors duration-200 ease-in-out focus:outline-none
+          ${isDark ? "bg-blue-600 shadow-inner" : "bg-gray-300 shadow-inner"}
+        `}
+        aria-label="Toggle dark mode"
+      >
+        <span
+          className={`
+            inline-block h-3 w-3 transform rounded-full bg-white 
+            transition-transform duration-200 ease-in-out shadow-sm
+            ${isDark ? "translate-x-5" : "translate-x-1"}
+          `}
+        />
+      </button>
+    </div>
+  );
+};
+
+export default DarkModeToggle;

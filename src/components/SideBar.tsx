@@ -1,4 +1,5 @@
 import Company from "./Company";
+import DarkModeToggle from "./DarkModeToggle";
 import Logo from "./Logo";
 import ProductSelect from "./ProductSelect";
 import SimpleSelect from "./SimpleSelect";
@@ -25,6 +26,8 @@ const SideBar = () => {
         <h5 className="text-sm leading-[1.5] uppercase px-2">general</h5>
         <SimpleSelect title="Account & Settings" icon="settings" />
         <SimpleSelect title="Help" icon="help" />
+        {/* <SimpleSelect title="Dark Mode" icon="moon" /> */}
+        <DarkModeToggle />
       </div>
     </div>
   );
