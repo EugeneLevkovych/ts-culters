@@ -26,7 +26,6 @@ const SideBar = () => {
         <h5 className="text-sm leading-[1.5] uppercase px-2">general</h5>
         <SimpleSelect title="Account & Settings" icon="settings" />
         <SimpleSelect title="Help" icon="help" />
-        {/* <SimpleSelect title="Dark Mode" icon="moon" /> */}
         <DarkModeToggle />
       </div>
     </div>

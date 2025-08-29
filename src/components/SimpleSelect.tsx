@@ -5,7 +5,7 @@ type IconType =
   | "line-chart"
   | "settings"
   | "help";
-// | "moon";
+
 interface SimpleSelectProps {
   title: string;
   icon: IconType;
