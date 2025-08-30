@@ -23,7 +23,7 @@ const ProductTable = () => {
   }));
 
   return (
-    <div className="border-2 rounded-3xl p-6 bg-white">
+    <div className="border-2 rounded-3xl border-gray12 p-6 bg-white">
       <div className="flex mb-6">
         <Input />
       </div>
@@ -34,18 +34,21 @@ const ProductTable = () => {
           className="mb-8"
         />
       </div>
-      <div className="border border-gray12 rounded-2xl">
+      <div className="border rounded-2xl border-gray12 overflow-hidden">
         <div className="flex bg-gray13 border-b border-gray12">
+          <div className="p-3">
+            <input className="accent-blue2 cursor-pointer" type="checkbox" />
+          </div>
           <SortButton title="Product" />
           <SortButton title="Price" />
           <FilterButton title="Sales" />
           <FilterButton title="Status" />
         </div>
-      </div>
 
-      {products.map((product) => (
-        <ProductItem key={product.id} product={product} />
-      ))}
+        {products.map((product) => (
+          <ProductItem key={product.id} product={product} />
+        ))}
+      </div>
     </div>
   );
 };

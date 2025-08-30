@@ -8,6 +8,10 @@ interface ProductProps {
 const ProductItem = ({ product }: ProductProps) => {
   return (
     <div className="flex border-b border-gray13 hover:bg-gray12 transition-colors">
+      <div className="p-3">
+        <input className="accent-blue2 cursor-pointer" type="checkbox" />
+      </div>
+
       <div className="flex items-center gap-2 p-3">
         <img className="h-10" src={productImg} alt="product" />
         <div>
