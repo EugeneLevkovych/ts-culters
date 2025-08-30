@@ -1,4 +1,4 @@
-import ProductPopular from "./ProductPopular";
+import ProductTable from "./ProductTable";
 
 const MainContent = ({ handleLogout }) => {
   return (
@@ -27,7 +27,7 @@ const MainContent = ({ handleLogout }) => {
           Exit
         </button>
       </div>
-      <ProductPopular />
+      <ProductTable />
     </div>
   );
 };
