@@ -1,6 +1,5 @@
 import { products } from "../data/productData";
 import SortButton from "./SortButton";
-import FilterButton from "./FilterButton";
 import ProductItem from "./ProductItem";
 import Input from "./Input";
 import CategoryTabs from "./CategoryTabs";
@@ -27,13 +26,11 @@ const ProductTable = () => {
       <div className="flex mb-6">
         <Input />
       </div>
-      <div className="flex gap-2 font-bold text-sm leading-[1.5] text-gray2 px-3 py-2 mb-6">
-        <CategoryTabs
-          categories={categoriesWithActive} // використовуємо оновлений масив
-          onCategorySelect={handleCategorySelect}
-          className="mb-8"
-        />
-      </div>
+      <CategoryTabs
+        categories={categoriesWithActive} // використовуємо оновлений масив
+        onCategorySelect={handleCategorySelect}
+        className="mb-8"
+      />
       <div className="border rounded-2xl border-gray12 overflow-hidden">
         <div className="flex bg-gray13 border-b border-gray12">
           <div className="p-3">
@@ -41,8 +38,10 @@ const ProductTable = () => {
           </div>
           <SortButton title="Product" />
           <SortButton title="Price" />
-          <FilterButton title="Sales" />
-          <FilterButton title="Status" />
+          <SortButton title="Size" />
+          <SortButton title="QTY" />
+          <SortButton title="Date" />
+          <SortButton title="Action" />
         </div>
 
         {products.map((product) => (

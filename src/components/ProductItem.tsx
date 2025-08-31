@@ -22,18 +22,30 @@ const ProductItem = ({ product }: ProductProps) => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center">
+      <div className="flex justify-center p-3">
         <p className="product-text">${product.price.toFixed(2)}</p>
       </div>
 
-      <div className="flex items-center justify-center">
-        <span className="product-text">{product.sales.toLocaleString()}</span>
+      <div className="flex justify-center p-3">
+        <span className="product-text">{product.size.toLocaleString()}</span>
       </div>
 
-      <div className="flex items-center justify-center">
+      <div className="flex justify-center p-3">
         <div className="px-2 py-1.5 bg-green2 text-green1 font-medium text-xs leading-[1.4] rounded-[10px]">
           {product.status}
         </div>
+      </div>
+
+      <div className="flex gap-4 p-3">
+        <svg className="size-6 stroke-gray7 fill-transparent">
+          <use href="./sprite.svg#icon-eye-open"></use>
+        </svg>
+        <svg className="size-6 stroke-gray7 fill-transparent">
+          <use href="./sprite.svg#icon-edit"></use>
+        </svg>
+        <svg className="size-6 stroke-gray7 fill-transparent">
+          <use href="./sprite.svg#icon-delete"></use>
+        </svg>
       </div>
     </div>
   );

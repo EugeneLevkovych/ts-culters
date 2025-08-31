@@ -13,12 +13,12 @@ const CategoryTabs: React.FC<CategoryTabsProps> = ({
 }) => {
   return (
     <div className={`flex gap-2 ${className}`}>
-      {categories.map((category, index) => (
+      {categories.map((category) => (
         <button
-          key={category.id || category.name || index}
+          key={category.id}
           onClick={() => onCategorySelect && onCategorySelect(category)}
           className={`
-            px-3 py-2 rounded-lg font-bold text-sm transition-all duration-200
+            flex-1 px-3 py-2 rounded-lg font-bold text-sm leading-[1.5] text-gray2 transition-all duration-200
             ${
               category.active
                 ? "bg-blue4 text-blue2"

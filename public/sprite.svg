@@ -113,5 +113,16 @@
 <symbol id="icon-help" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.8667" d="M16 22.667h0.013M16 18.667c1.187-2.542 4-2.354 4-5.333 0-2-1.333-4-4-4-2.064 0-3.329 1.198-3.796 2.667M16 28c6.627 0 12-5.373 12-12s-5.373-12-12-12c-6.627 0-12 5.373-12 12s5.373 12 12 12z"></path>
 </symbol>
+<symbol id="icon-eye-open" viewBox="0 0 33 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.8667" d="M30 16c-2.329 4.768-8.163 9.333-13.334 9.333s-11.004-4.565-13.333-9.334"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.8667" d="M30 16c-2.329-4.768-8.162-9.334-13.333-9.334s-11.005 4.564-13.334 9.333"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.8667" d="M20.667 16c0 2.209-1.791 4-4 4s-4-1.791-4-4c0-2.209 1.791-4 4-4s4 1.791 4 4z"></path>
+</symbol>
+<symbol id="icon-edit" viewBox="0 0 33 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.8667" d="M16.667 5.333h-8c-1.473 0-2.667 1.194-2.667 2.667v16c0 1.473 1.194 2.667 2.667 2.667h16c1.473 0 2.667-1.194 2.667-2.667v-8M12.667 20v-3.333l11.667-11.667c0.921-0.92 2.413-0.92 3.333 0v0c0.921 0.92 0.921 2.413 0 3.333l-11.667 11.667h-3.333z"></path>
+</symbol>
+<symbol id="icon-delete" viewBox="0 0 33 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.8667" d="M8.667 6.667h16M12.667 6.667v0c2.103-2.453 5.897-2.453 8 0v0M12.667 26.667h8c1.473 0 2.667-1.194 2.667-2.667v-12c0-0.736-0.597-1.333-1.333-1.333h-10.667c-0.736 0-1.333 0.597-1.333 1.333v12c0 1.473 1.194 2.667 2.667 2.667z"></path>
+</symbol>
 </defs>
 </svg>
