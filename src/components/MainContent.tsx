@@ -1,6 +1,10 @@
 import ProductTable from "./ProductTable";
 
-const MainContent = ({ handleLogout }) => {
+interface MainContentProps {
+  handleLogout: () => void;
+}
+
+const MainContent = ({ handleLogout }: MainContentProps) => {
   return (
     <div className="p-8 bg-gray8">
       <div className="flex justify-between items-center mb-5.5">
