@@ -1,3 +1,4 @@
+import Admin from "./Admin";
 import Input from "./Input";
 
 const Header = () => {
@@ -15,6 +16,8 @@ const Header = () => {
             <use href="./sprite.svg#icon-notifications"></use>
           </svg>
         </div>
+        <div className="h-full border-l border-gray17"></div>
+        <Admin />
       </div>
     </div>
   );
