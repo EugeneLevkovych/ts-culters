@@ -6,7 +6,7 @@ import SimpleSelect from "./SimpleSelect";
 
 const SideBar = () => {
   return (
-    <div className="px-4 py-8">
+    <div className="w-70 flex-shrink-0 px-4 py-8">
       <div className="flex justify-between items-center w-full mb-11">
         <Logo size="small" />
         <svg className="size-6">

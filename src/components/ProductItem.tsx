@@ -12,7 +12,7 @@ const ProductItem = ({ product }: ProductProps) => {
         <input className="accent-blue2 cursor-pointer" type="checkbox" />
       </div>
 
-      <div className="flex items-center gap-2 p-3">
+      <div className="flex-2 flex items-center gap-2 p-3 min-w-0">
         <img className="h-10" src={productImg} alt="product" />
         <div>
           <div className="text-xs text-gray7 leading-[1.4]">{product.id}</div>
@@ -22,21 +22,29 @@ const ProductItem = ({ product }: ProductProps) => {
         </div>
       </div>
 
-      <div className="flex justify-center p-3">
+      <div className="w-30 flex-shrink-0 flex justify-center p-3">
         <p className="product-text">${product.price.toFixed(2)}</p>
       </div>
 
-      <div className="flex justify-center p-3">
-        <span className="product-text">{product.size.toLocaleString()}</span>
+      <div className="w-30 flex-shrink-0 flex justify-center p-3">
+        <p className="product-text">{product.size}</p>
       </div>
 
-      <div className="flex justify-center p-3">
+      <div className="w-25 flex-shrink-0 flex justify-center p-3">
+        <p className="product-text">{product.qty}</p>
+      </div>
+
+      <div className="w-37.5 flex-shrink-0 flex justify-center p-3">
+        <p className="product-text">{product.date}</p>
+      </div>
+
+      <div className="w-32.5 flex-shrink-0 flex justify-center p-3">
         <div className="px-2 py-1.5 bg-green2 text-green1 font-medium text-xs leading-[1.4] rounded-[10px]">
           {product.status}
         </div>
       </div>
 
-      <div className="flex gap-4 p-3">
+      <div className="w-32.5 flex-shrink-0 flex gap-4 p-3">
         <svg className="size-6 stroke-gray7 fill-transparent">
           <use href="./sprite.svg#icon-eye-open"></use>
         </svg>

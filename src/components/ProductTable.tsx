@@ -1,11 +1,11 @@
 import { products } from "../data/productData";
-import SortButton from "./SortButton";
 import ProductItem from "./ProductItem";
 import Input from "./Input";
 import CategoryTabs from "./CategoryTabs";
 import { categories } from "../data/categoryData";
 import { useState } from "react";
 import type { Category } from "../types/categoryType";
+import ProductSortBar from "./ProductSortBar";
 
 const ProductTable = () => {
   const [activeCategory, setActiveCategory] = useState<string>("Sneakers");
@@ -32,18 +32,7 @@ const ProductTable = () => {
         className="mb-8"
       />
       <div className="border rounded-2xl border-gray12 overflow-hidden">
-        <div className="flex bg-gray13 border-b border-gray12">
-          <div className="p-3">
-            <input className="accent-blue2 cursor-pointer" type="checkbox" />
-          </div>
-          <SortButton title="Product" />
-          <SortButton title="Price" />
-          <SortButton title="Size" />
-          <SortButton title="QTY" />
-          <SortButton title="Date" />
-          <SortButton title="Action" />
-        </div>
-
+        <ProductSortBar />
         {products.map((product) => (
           <ProductItem key={product.id} product={product} />
         ))}
