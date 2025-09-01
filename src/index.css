@@ -56,6 +56,7 @@ body {
   --color-green2: #b2ffb4;
   --color-red1: #f00;
   --color-red2: #ffdcdc;
+  --color-red3: #ea3030;
 }
 
 @utility form-text {
