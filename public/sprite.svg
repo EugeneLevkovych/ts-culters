@@ -124,5 +124,11 @@
 <symbol id="icon-delete" viewBox="0 0 33 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.8667" d="M8.667 6.667h16M12.667 6.667v0c2.103-2.453 5.897-2.453 8 0v0M12.667 26.667h8c1.473 0 2.667-1.194 2.667-2.667v-12c0-0.736-0.597-1.333-1.333-1.333h-10.667c-0.736 0-1.333 0.597-1.333 1.333v12c0 1.473 1.194 2.667 2.667 2.667z"></path>
 </symbol>
+<symbol id="icon-mail" viewBox="0 0 31 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.792" d="M3.84 10.88l10.1 6.733c0.86 0.573 1.98 0.573 2.84 0l10.1-6.733M6.4 24.96h17.92c1.414 0 2.56-1.146 2.56-2.56v-12.8c0-1.414-1.146-2.56-2.56-2.56h-17.92c-1.414 0-2.56 1.146-2.56 2.56v12.8c0 1.414 1.146 2.56 2.56 2.56z"></path>
+</symbol>
+<symbol id="icon-notifications" viewBox="0 0 31 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.792" d="M15.36 7.68c3.535 0 6.4 2.865 6.4 6.4v2.867c0 0.627 0.23 1.232 0.647 1.701l1.633 1.837c1.101 1.238 0.222 3.196-1.435 3.196h-14.489c-1.657 0-2.536-1.957-1.435-3.196l1.633-1.837c0.417-0.469 0.647-1.074 0.647-1.701l0-2.867c0-3.535 2.865-6.4 6.4-6.4zM15.36 7.68v-3.2M14.080 27.52h2.56"></path>
+</symbol>
 </defs>
 </svg>
