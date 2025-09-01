@@ -35,6 +35,42 @@ export const products = [
     date: "04/17/23 at 8:25 PM",
     status: "Out of Stock",
   },
+  {
+    id: 5,
+    name: "Kanky Kitadakate (Green)",
+    price: 20.0,
+    size: 40,
+    qty: 40,
+    date: "04/17/23 at 8:25 PM",
+    status: "Available",
+  },
+  {
+    id: 6,
+    name: "Kanky Kitadakate (Green)",
+    price: 20.0,
+    size: 41,
+    qty: 50,
+    date: "04/17/23 at 8:25 PM",
+    status: "Out of Stock",
+  },
+  {
+    id: 7,
+    name: "Kanky Kitadakate (Green)",
+    price: 20.0,
+    size: 42,
+    qty: 60,
+    date: "04/17/23 at 8:25 PM",
+    status: "Available",
+  },
+  {
+    id: 8,
+    name: "Kanky Kitadakate (Green)",
+    price: 20.0,
+    size: 43,
+    qty: 70,
+    date: "04/17/23 at 8:25 PM",
+    status: "Out of Stock",
+  },
 ];
 
 export const productCategories = [

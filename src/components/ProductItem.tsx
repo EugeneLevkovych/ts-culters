@@ -12,7 +12,7 @@ const ProductItem = ({ product }: ProductProps) => {
         <input className="accent-blue2 cursor-pointer" type="checkbox" />
       </div>
 
-      <div className="flex-2 flex items-center gap-2 p-3 min-w-0">
+      <div className="flex-1 flex items-center gap-2 p-3 min-w-0">
         <img className="h-10" src={productImg} alt="product" />
         <div>
           <div className="text-xs text-gray7 leading-[1.4]">{product.id}</div>

@@ -6,7 +6,7 @@ const ProductSortBar = () => {
       <div className="p-3">
         <input className="accent-blue2 cursor-pointer" type="checkbox" />
       </div>
-      <div className="flex-2 flex p-3 items-center justify-between min-w-0">
+      <div className="flex-1 flex p-3 items-center justify-between min-w-0">
         <h6>Product</h6>
         <ArrowsUpDown />
       </div>
