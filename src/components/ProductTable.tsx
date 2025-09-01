@@ -6,6 +6,7 @@ import { categories } from "../data/categoryData";
 import { useState } from "react";
 import type { Category } from "../types/categoryType";
 import ProductSortBar from "./ProductSortBar";
+import ArrowsLeftRight from "./ArrowsLeftRight";
 
 const ProductTable = () => {
   const [activeCategory, setActiveCategory] = useState<string>("Sneakers");
@@ -15,7 +16,6 @@ const ProductTable = () => {
     console.log("Selected category:", category.name);
   };
 
-  // Додаємо active статус динамічно
   const categoriesWithActive = categories.map((category) => ({
     ...category,
     active: activeCategory === category.name,
@@ -27,15 +27,22 @@ const ProductTable = () => {
         <Input />
       </div>
       <CategoryTabs
-        categories={categoriesWithActive} // використовуємо оновлений масив
+        categories={categoriesWithActive}
         onCategorySelect={handleCategorySelect}
         className="mb-8"
       />
-      <div className="border rounded-2xl border-gray12 overflow-hidden">
+      <div className="border rounded-2xl border-gray12 overflow-hidden mb-6">
         <ProductSortBar />
         {products.map((product) => (
           <ProductItem key={product.id} product={product} />
         ))}
+      </div>
+      <div className="flex justify-between">
+        <p>1-10 of 13 Pages</p>
+        <div className="flex">
+          <p>The page on</p>
+          <ArrowsLeftRight />
+        </div>
       </div>
     </div>
   );

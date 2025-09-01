@@ -1,3 +1,4 @@
+import Admin from "./Admin";
 import Company from "./Company";
 import DarkModeToggle from "./DarkModeToggle";
 import Logo from "./Logo";
@@ -22,11 +23,17 @@ const SideBar = () => {
         <SimpleSelect title="Customers" icon="user-group" />
         <SimpleSelect title="Sales Report" icon="line-chart" />
       </div>
-      <div className="mb-8 space-y-2.5">
-        <h5 className="text-sm leading-[1.5] uppercase px-2">general</h5>
+      <div className="mb-11.5 space-y-2.5">
+        <h5 className="text-sm leading-[1.5] uppercase px-2">tools</h5>
         <SimpleSelect title="Account & Settings" icon="settings" />
         <SimpleSelect title="Help" icon="help" />
         <DarkModeToggle />
+      </div>
+      <div className="flex justify-between">
+        <Admin />
+        <svg className="size-6 stroke-gray7 fill-transparent">
+          <use href="./sprite.svg#icon-arrow-down-simple"></use>
+        </svg>
       </div>
     </div>
   );

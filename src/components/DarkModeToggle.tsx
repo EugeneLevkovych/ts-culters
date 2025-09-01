@@ -19,7 +19,7 @@ const DarkModeToggle = ({
   };
 
   return (
-    <div className="flex gap-2 items-center p-2 mb-2.5 rounded-xl hover:bg-blue4 cursor-pointer">
+    <div className="flex gap-2 items-center p-2 rounded-xl hover:bg-blue4 cursor-pointer">
       <svg className="size-6 stroke-gray7 fill-transparent">
         <use href="./sprite.svg#icon-moon"></use>
       </svg>
