@@ -34,12 +34,18 @@ const ProductItem = ({ product }: ProductProps) => {
         <p className="product-text">{product.qty}</p>
       </div>
 
-      <div className="w-37.5 flex-shrink-0 flex justify-center p-3">
+      <div className="w-37.5 flex-shrink-0 flex justify-center py-3 pl-3 pr-16">
         <p className="product-text">{product.date}</p>
       </div>
 
       <div className="w-32.5 flex-shrink-0 flex justify-center p-3">
-        <div className="px-2 py-1.5 bg-green2 text-green1 font-medium text-xs leading-[1.4] rounded-[10px]">
+        <div
+          className={`h-7.5 px-2 py-1.5 ${
+            product.status === "Out of Stock"
+              ? "bg-red2 text-red1"
+              : "bg-green2 text-green1"
+          } font-medium text-xs leading-[1.4] rounded-[10px]`}
+        >
           {product.status}
         </div>
       </div>

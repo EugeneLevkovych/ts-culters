@@ -53,6 +53,8 @@ body {
   --color-lime-green: #bcf328;
   --color-green1: #04910c;
   --color-green2: #b2ffb4;
+  --color-red1: #f00;
+  --color-red2: #ffdcdc;
 }
 
 @utility form-text {
