@@ -7,6 +7,9 @@ import { useState } from "react";
 import type { Category } from "../types/categoryType";
 import ProductSortBar from "./ProductSortBar";
 import ArrowsLeftRight from "./ArrowsLeftRight";
+import FilterBtn from "./FilterBtn";
+import ExportBtn from "./ExportBtn";
+import BlueButton from "./BlueButton";
 
 const ProductTable = () => {
   const [activeCategory, setActiveCategory] = useState<string>("Sneakers");
@@ -23,8 +26,13 @@ const ProductTable = () => {
 
   return (
     <div className="border-2 rounded-3xl border-gray12 p-6 bg-white">
-      <div className="flex mb-6">
-        <Input width="500px" />
+      <div className="flex justify-between mb-6">
+        <Input placeholder="Search for id, name Customer" width="500px" />
+        <div className="flex gap-3">
+          <FilterBtn />
+          <ExportBtn />
+          <BlueButton text="Add Customer +" />
+        </div>
       </div>
       <CategoryTabs
         categories={categoriesWithActive}

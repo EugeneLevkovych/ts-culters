@@ -5,7 +5,7 @@ import SearchAndMenu from "./SearchAndMenu";
 const Header = () => {
   return (
     <div className="flex justify-between px-8 py-[1.6rem]">
-      <Input width="300px" />
+      <Input placeholder="Search product" width="300px" />
       <div className="flex gap-4">
         <div className="relative hidden md:flex justify-center items-center rounded-lg size-9 bg-gray13">
           <svg className="size-6 stroke-gray7 fill-transparent">
