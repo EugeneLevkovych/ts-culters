@@ -24,7 +24,7 @@ const ProductTable = () => {
   return (
     <div className="border-2 rounded-3xl border-gray12 p-6 bg-white">
       <div className="flex mb-6">
-        <Input />
+        <Input width="500px" />
       </div>
       <CategoryTabs
         categories={categoriesWithActive}
