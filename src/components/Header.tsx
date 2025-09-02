@@ -1,5 +1,6 @@
 import Admin from "./Admin";
 import Input from "./Input";
+import SearchAndMenu from "./SearchAndMenu";
 
 const Header = () => {
   return (
@@ -23,8 +24,11 @@ const Header = () => {
           </div>
         </div>
         <div className="hidden md:block h-full border-l border-gray17"></div>
-        <Admin />
+        <div className="flex justify-between">
+          <Admin />
+        </div>
       </div>
+      <SearchAndMenu />
     </div>
   );
 };
