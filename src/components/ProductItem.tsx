@@ -7,12 +7,12 @@ interface ProductProps {
 
 const ProductItem = ({ product }: ProductProps) => {
   return (
-    <div className="flex border-b border-gray13 hover:bg-gray12 transition-colors">
-      <div className="p-3">
+    <div className="flex border-b border-gray13 hover:bg-gray12 transition-colors p-4 lg:p-3">
+      <div className="mr-3">
         <input className="accent-blue2 cursor-pointer" type="checkbox" />
       </div>
 
-      <div className="flex-1 flex items-center gap-2 p-3 min-w-0">
+      <div className="flex-1 flex items-center gap-2 min-w-0">
         <img className="h-10" src={productImg} alt="product" />
         <div>
           <div className="text-xs text-gray7 leading-[1.4]">{product.id}</div>
@@ -22,23 +22,23 @@ const ProductItem = ({ product }: ProductProps) => {
         </div>
       </div>
 
-      <div className="w-30 flex-shrink-0 flex justify-center p-3">
+      <div className="w-30 flex-shrink-0 hidden lg:flex justify-center p-3">
         <p className="product-text">${product.price.toFixed(2)}</p>
       </div>
 
-      <div className="w-30 flex-shrink-0 flex justify-center p-3">
+      <div className="w-30 flex-shrink-0 hidden lg:flex justify-center p-3">
         <p className="product-text">{product.size}</p>
       </div>
 
-      <div className="w-25 flex-shrink-0 flex justify-center p-3">
+      <div className="w-25 flex-shrink-0 hidden lg:flex justify-center p-3">
         <p className="product-text">{product.qty}</p>
       </div>
 
-      <div className="w-37.5 flex-shrink-0 flex justify-center py-3 pl-3 pr-16">
+      <div className="w-37.5 flex-shrink-0 hidden lg:flex justify-center py-3 pl-3 pr-16">
         <p className="product-text">{product.date}</p>
       </div>
 
-      <div className="w-32.5 flex-shrink-0 flex justify-center p-3">
+      <div className="w-32.5 flex-shrink-0 hidden lg:flex justify-center p-3">
         <div
           className={`h-7.5 px-2 py-1.5 ${
             product.status === "Out of Stock"
@@ -50,7 +50,7 @@ const ProductItem = ({ product }: ProductProps) => {
         </div>
       </div>
 
-      <div className="w-32.5 flex-shrink-0 flex gap-4 p-3">
+      <div className="w-32.5 flex-shrink-0 hidden lg:flex gap-4 p-3">
         <svg className="size-6 stroke-gray7 fill-transparent">
           <use href="./sprite.svg#icon-eye-open"></use>
         </svg>
@@ -59,6 +59,12 @@ const ProductItem = ({ product }: ProductProps) => {
         </svg>
         <svg className="size-6 stroke-gray7 fill-transparent">
           <use href="./sprite.svg#icon-delete"></use>
+        </svg>
+      </div>
+
+      <div className="w-8 h-7 flex justify-center items-center lg:hidden bg-gray13 rounded-lg">
+        <svg className="size-5 stroke-gray7 fill-transparent">
+          <use href="./sprite.svg#icon-arrow-down-simple"></use>
         </svg>
       </div>
     </div>
