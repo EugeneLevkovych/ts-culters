@@ -1,6 +1,6 @@
 export const products = [
   {
-    id: 1,
+    id: 21231,
     name: "Kanky Kitadakate (Green)",
     price: 20.0,
     size: 40,
@@ -9,8 +9,8 @@ export const products = [
     status: "Available",
   },
   {
-    id: 2,
-    name: "Kanky Kitadakate (Green)",
+    id: 21232,
+    name: "Beigi Coffe (Navy)",
     price: 20.0,
     size: 41,
     qty: 50,
@@ -18,8 +18,8 @@ export const products = [
     status: "Out of Stock",
   },
   {
-    id: 3,
-    name: "Kanky Kitadakate (Green)",
+    id: 21233,
+    name: "Story Honzo (Cream)",
     price: 20.0,
     size: 42,
     qty: 60,
@@ -27,7 +27,7 @@ export const products = [
     status: "Available",
   },
   {
-    id: 4,
+    id: 21234,
     name: "Kanky Kitadakate (Green)",
     price: 20.0,
     size: 43,
@@ -36,8 +36,8 @@ export const products = [
     status: "Out of Stock",
   },
   {
-    id: 5,
-    name: "Kanky Kitadakate (Green)",
+    id: 21235,
+    name: "Story Honzo (Black)",
     price: 20.0,
     size: 40,
     qty: 40,
@@ -45,8 +45,8 @@ export const products = [
     status: "Available",
   },
   {
-    id: 6,
-    name: "Kanky Kitadakate (Green)",
+    id: 21236,
+    name: "Story Honzo (Cream)",
     price: 20.0,
     size: 41,
     qty: 50,
@@ -54,8 +54,8 @@ export const products = [
     status: "Out of Stock",
   },
   {
-    id: 7,
-    name: "Kanky Kitadakate (Green)",
+    id: 21237,
+    name: "Beigi Coffe (Navy)",
     price: 20.0,
     size: 42,
     qty: 60,
@@ -63,7 +63,7 @@ export const products = [
     status: "Available",
   },
   {
-    id: 8,
+    id: 21238,
     name: "Kanky Kitadakate (Green)",
     price: 20.0,
     size: 43,

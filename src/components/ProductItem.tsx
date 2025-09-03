@@ -1,3 +1,4 @@
+import { useState } from "react";
 import productImg from "../assets/produkt.png";
 import type { Product } from "../types/productType";
 
@@ -6,68 +7,102 @@ interface ProductProps {
 }
 
 const ProductItem = ({ product }: ProductProps) => {
-  return (
-    <div className="flex border-b border-gray13 hover:bg-gray12 transition-colors p-4 lg:p-3">
-      <div className="mr-3">
-        <input className="accent-blue2 cursor-pointer" type="checkbox" />
-      </div>
+  const [isOpen, setIsOpen] = useState(false);
 
-      <div className="flex-1 flex items-center gap-2 min-w-0">
-        <img className="h-10" src={productImg} alt="product" />
-        <div>
-          <div className="text-xs text-gray7 leading-[1.4]">{product.id}</div>
-          <div className="font-semibold text-sm leading-[1.4] text-gray7">
-            {product.name}
+  return (
+    <>
+      <div className="flex border-b border-gray13 hover:bg-gray12 transition-colors p-4 lg:p-3">
+        <div className="mr-3">
+          <input className="accent-blue2 cursor-pointer" type="checkbox" />
+        </div>
+
+        <div className="flex-1 flex items-center gap-2 min-w-0">
+          <img className="h-10" src={productImg} alt="product" />
+          <div>
+            <div className="text-xs leading-[1.4] text-blue2">{product.id}</div>
+            <div className="text-sm leading-[1.5] text-gray7">
+              {product.name}
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="w-30 flex-shrink-0 hidden lg:flex justify-center p-3">
-        <p className="product-text">${product.price.toFixed(2)}</p>
-      </div>
+        {/* ///////////////////////////////////////////////////////////////// */}
+        <div className="w-30 flex-shrink-0 hidden lg:flex justify-center">
+          <p className="product-text">${product.price.toFixed(2)}</p>
+        </div>
 
-      <div className="w-30 flex-shrink-0 hidden lg:flex justify-center p-3">
-        <p className="product-text">{product.size}</p>
-      </div>
+        <div className="w-30 flex-shrink-0 hidden lg:flex justify-center">
+          <p className="product-text">{product.size}</p>
+        </div>
 
-      <div className="w-25 flex-shrink-0 hidden lg:flex justify-center p-3">
-        <p className="product-text">{product.qty}</p>
-      </div>
+        <div className="w-25 flex-shrink-0 hidden lg:flex justify-center">
+          <p className="product-text">{product.qty}</p>
+        </div>
 
-      <div className="w-37.5 flex-shrink-0 hidden lg:flex justify-center py-3 pl-3 pr-16">
-        <p className="product-text">{product.date}</p>
-      </div>
+        <div className="w-37.5 flex-shrink-0 hidden lg:flex justify-center pl-3 pr-16">
+          <p className="product-text">{product.date}</p>
+        </div>
 
-      <div className="w-32.5 flex-shrink-0 hidden lg:flex justify-center p-3">
+        <div className="w-32.5 flex-shrink-0 hidden lg:flex justify-center">
+          <div
+            className={`h-7.5 px-2 py-1.5 ${
+              product.status === "Out of Stock"
+                ? "bg-red2 text-red1"
+                : "bg-green2 text-green1"
+            } font-medium text-xs leading-[1.4] rounded-[10px]`}
+          >
+            {product.status}
+          </div>
+        </div>
+
+        <div className="w-32.5 flex-shrink-0 hidden lg:flex gap-4 p-3">
+          <svg className="size-6 stroke-gray7 fill-transparent">
+            <use href="./sprite.svg#icon-eye-open"></use>
+          </svg>
+          <svg className="size-6 stroke-gray7 fill-transparent">
+            <use href="./sprite.svg#icon-edit"></use>
+          </svg>
+          <svg className="size-6 stroke-gray7 fill-transparent">
+            <use href="./sprite.svg#icon-delete"></use>
+          </svg>
+        </div>
+
         <div
-          className={`h-7.5 px-2 py-1.5 ${
-            product.status === "Out of Stock"
-              ? "bg-red2 text-red1"
-              : "bg-green2 text-green1"
-          } font-medium text-xs leading-[1.4] rounded-[10px]`}
+          onClick={() => setIsOpen(!isOpen)}
+          className="w-8 h-7 flex justify-center items-center lg:hidden bg-gray13 rounded-lg"
         >
-          {product.status}
+          {!isOpen ? (
+            <svg className="size-5 stroke-gray7 fill-transparent">
+              <use href="./sprite.svg#icon-arrow-down-simple"></use>
+            </svg>
+          ) : (
+            <svg className="size-5 stroke-gray7 fill-transparent">
+              <use href="./sprite.svg#icon-arrow-up-simple"></use>
+            </svg>
+          )}
         </div>
       </div>
-
-      <div className="w-32.5 flex-shrink-0 hidden lg:flex gap-4 p-3">
-        <svg className="size-6 stroke-gray7 fill-transparent">
-          <use href="./sprite.svg#icon-eye-open"></use>
-        </svg>
-        <svg className="size-6 stroke-gray7 fill-transparent">
-          <use href="./sprite.svg#icon-edit"></use>
-        </svg>
-        <svg className="size-6 stroke-gray7 fill-transparent">
-          <use href="./sprite.svg#icon-delete"></use>
-        </svg>
+      {/* ///////////////////////////////////////////////////////////////// */}
+      <div
+        className={`text-sm leading-[1.5] transition-all duration-300 ease-in-out ${
+          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        } overflow-hidden`}
+      >
+        <div className="flex gap-4 pl-12">
+          <p className="w-15 text-gray2">Price</p>
+          <p className="text-gray1">${product.price.toFixed(2)}</p>
+        </div>
+        <div className="flex gap-4 pl-12">
+          <p className="w-15 text-gray2">QTY</p>
+          <p className="text-gray1">{product.qty}</p>
+        </div>
+        <div className="flex gap-4 pl-12">
+          <p className="w-15 text-gray2">Date</p>
+          <p className="text-gray1">{product.date}</p>
+        </div>
       </div>
-
-      <div className="w-8 h-7 flex justify-center items-center lg:hidden bg-gray13 rounded-lg">
-        <svg className="size-5 stroke-gray7 fill-transparent">
-          <use href="./sprite.svg#icon-arrow-down-simple"></use>
-        </svg>
-      </div>
-    </div>
+      {/* ///////////////////////////////////////////////////////////////// */}
+    </>
   );
 };
 export default ProductItem;
