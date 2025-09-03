@@ -9,7 +9,7 @@ import ProductSortBar from "./ProductSortBar";
 import ArrowsLeftRight from "./ArrowsLeftRight";
 import FilterBtn from "./FilterBtn";
 import ExportBtn from "./ExportBtn";
-import BlueButton from "./BlueButton";
+import ButtonAdd from "./ButtonAdd";
 
 const ProductTable = () => {
   const [activeCategory, setActiveCategory] = useState<string>("Sneakers");
@@ -28,10 +28,11 @@ const ProductTable = () => {
     <div className="border-2 rounded-3xl border-gray12 p-6 bg-white">
       <div className="flex justify-between mb-6">
         <Input placeholder="Search for id, name Customer" width="500px" />
-        <div className="flex gap-3">
+
+        <div className="flex gap-3 md:ml-3">
           <FilterBtn />
           <ExportBtn />
-          <BlueButton text="Add Customer +" />
+          <ButtonAdd text="Add Customer" />
         </div>
       </div>
       <CategoryTabs

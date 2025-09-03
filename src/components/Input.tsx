@@ -5,12 +5,14 @@ interface InputProps {
 
 const Input = ({ width, placeholder }: InputProps) => {
   return (
-    <div className="relative hidden md:block">
+    <div
+      className="w-full relative hidden md:block"
+      style={{ maxWidth: `${width}` }}
+    >
       <input
         type="text"
         placeholder={placeholder}
-        className="border border-gray5 rounded-xl my-placeholder placeholder:text-gray6 px-4 py-[7px]"
-        style={{ width: `${width}` }}
+        className="w-full border border-gray5 rounded-xl my-placeholder placeholder:text-gray6 px-4 py-[7px]"
       />
       <svg className="absolute top-2.5 right-2.5 size-6 fill-transparent stroke-gray7">
         <use href="./sprite.svg#icon-search"></use>
