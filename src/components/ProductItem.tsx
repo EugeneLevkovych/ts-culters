@@ -45,7 +45,7 @@ const ProductItem = ({ product }: ProductProps) => {
 
         <div className="w-32.5 flex-shrink-0 hidden lg:flex justify-center">
           <div
-            className={`h-7.5 px-2 py-1.5 ${
+            className={`h-7.5 px-2.5 py-1.5 ${
               product.status === "Out of Stock"
                 ? "bg-red2 text-red1"
                 : "bg-green2 text-green1"
@@ -86,19 +86,45 @@ const ProductItem = ({ product }: ProductProps) => {
       <div
         className={`text-sm leading-[1.5] transition-all duration-300 ease-in-out ${
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        } overflow-hidden`}
+        } space-y-3 pl-12 pb-3 -mt-1`}
       >
-        <div className="flex gap-4 pl-12">
+        <div className="flex gap-4">
           <p className="w-15 text-gray2">Price</p>
           <p className="text-gray1">${product.price.toFixed(2)}</p>
         </div>
-        <div className="flex gap-4 pl-12">
+        <div className="flex gap-4">
           <p className="w-15 text-gray2">QTY</p>
           <p className="text-gray1">{product.qty}</p>
         </div>
-        <div className="flex gap-4 pl-12">
+        <div className="flex gap-4">
           <p className="w-15 text-gray2">Date</p>
           <p className="text-gray1">{product.date}</p>
+        </div>
+        <div className="flex gap-4">
+          <p className="w-15 text-gray2">Status</p>
+          <div
+            className={`h-7.5 px-2.5 py-1.5 ${
+              product.status === "Out of Stock"
+                ? "bg-red2 text-red1"
+                : "bg-green2 text-green1"
+            } font-medium text-xs leading-[1.4] rounded-[10px]`}
+          >
+            {product.status}
+          </div>
+        </div>
+        <div className="flex gap-4">
+          <p className="w-15 text-gray2">Action</p>
+          <div className="flex gap-4">
+            <svg className="size-6 stroke-gray7 fill-transparent">
+              <use href="./sprite.svg#icon-eye-open"></use>
+            </svg>
+            <svg className="size-6 stroke-gray7 fill-transparent">
+              <use href="./sprite.svg#icon-edit"></use>
+            </svg>
+            <svg className="size-6 stroke-gray7 fill-transparent">
+              <use href="./sprite.svg#icon-delete"></use>
+            </svg>
+          </div>
         </div>
       </div>
       {/* ///////////////////////////////////////////////////////////////// */}
