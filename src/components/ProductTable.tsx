@@ -5,13 +5,12 @@ import CategoryTabs from "./CategoryTabs";
 import { categories } from "../data/categoryData";
 import { useState } from "react";
 import type { Category } from "../types/categoryType";
-
-import ArrowsLeftRight from "./ArrowsLeftRight";
 import FilterBtn from "./FilterBtn";
 import ExportBtn from "./ExportBtn";
 import ButtonAdd from "./ButtonAdd";
 import ProductItem from "./ProductItem";
 import ProductSortBar from "./ProductSortBar";
+import PagesCountBar from "./PagesCountBar";
 
 const ProductTable = () => {
   const [activeCategory, setActiveCategory] = useState<string>("Sneakers");
@@ -50,21 +49,7 @@ const ProductTable = () => {
           <ProductItem key={product.id} product={product} />
         ))}
       </div>
-      <div className="flex justify-between">
-        <p className="text-sm leading-[1.5] text-gray2">
-          <span className="font-bold text-blue2">1</span>-10 of 13 Pages
-        </p>
-        <div className="flex items-center gap-3 text-sm leading-[1.5] text-gray7">
-          <p>The page on</p>
-          <div className="h-7 flex items-center border rounded-lg border-gray15 px-1.5">
-            <p>1</p>
-            <svg className="size-5 fill-gray7">
-              <use href="./sprite.svg#icon-sorter-down"></use>
-            </svg>
-          </div>
-          <ArrowsLeftRight />
-        </div>
-      </div>
+      <PagesCountBar />
     </div>
   );
 };
