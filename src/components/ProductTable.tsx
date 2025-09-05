@@ -1,15 +1,17 @@
 import { products } from "../data/productData";
-import ProductItem from "./ProductItem";
+
 import Input from "./Input";
 import CategoryTabs from "./CategoryTabs";
 import { categories } from "../data/categoryData";
 import { useState } from "react";
 import type { Category } from "../types/categoryType";
-import ProductSortBar from "./ProductSortBar";
+
 import ArrowsLeftRight from "./ArrowsLeftRight";
 import FilterBtn from "./FilterBtn";
 import ExportBtn from "./ExportBtn";
 import ButtonAdd from "./ButtonAdd";
+import ProductItem from "./ProductItem";
+import ProductSortBar from "./ProductSortBar";
 
 const ProductTable = () => {
   const [activeCategory, setActiveCategory] = useState<string>("Sneakers");
