@@ -4,7 +4,7 @@ const ProductSortBar2 = () => {
   return (
     <div className="bg-gray13 border-b border-gray12 text-gray9">
       {/* Desktop Layout */}
-      <div className="hidden lg:grid lg:grid-cols-[auto_1fr_120px_120px_100px_150px_130px_130px_auto] gap-0 items-center">
+      <div className="hidden xl:grid xl:grid-cols-[auto_1fr_100px_100px_80px_130px_130px_110px_auto] 2xl:grid-cols-[auto_1fr_120px_120px_100px_150px_130px_130px_auto] gap-0 items-center">
         <div className="p-3.5">
           <input className="accent-blue2 cursor-pointer" type="checkbox" />
         </div>
@@ -45,7 +45,7 @@ const ProductSortBar2 = () => {
       </div>
 
       {/* Mobile Layout */}
-      <div className="flex lg:hidden">
+      <div className="flex xl:hidden">
         <div className="p-3">
           <input className="accent-blue2 cursor-pointer" type="checkbox" />
         </div>
