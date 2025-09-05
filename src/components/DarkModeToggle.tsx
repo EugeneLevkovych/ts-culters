@@ -19,7 +19,7 @@ const DarkModeToggle = ({
   };
 
   return (
-    <div className="flex gap-2 items-center p-2 rounded-xl hover:bg-blue4 cursor-pointer">
+    <div className="flex gap-2 items-center p-2 rounded-xl hover:bg-blue4">
       <svg className="size-6 stroke-gray7 fill-transparent">
         <use href="./sprite.svg#icon-moon"></use>
       </svg>
@@ -31,7 +31,7 @@ const DarkModeToggle = ({
         onClick={handleToggle}
         className={`
           relative inline-flex h-5 w-9 items-center rounded-full 
-          transition-colors duration-200 ease-in-out focus:outline-none
+          transition-colors duration-200 ease-in-out focus:outline-none cursor-pointer
           ${isDark ? "bg-blue1" : "bg-gray4"}
         `}
         aria-label="Toggle dark mode"

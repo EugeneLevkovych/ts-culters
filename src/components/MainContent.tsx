@@ -26,7 +26,7 @@ const MainContent = ({ handleLogout }: MainContentProps) => {
         </div>
         <button
           onClick={handleLogout}
-          className="px-6 py-3 bg-blue2 text-white rounded-xl font-semibold hover:bg-blue1 transition-colors"
+          className="px-6 py-3 bg-blue2 text-white rounded-xl font-semibold hover:bg-blue1 transition-colors cursor-pointer"
         >
           Exit
         </button>
