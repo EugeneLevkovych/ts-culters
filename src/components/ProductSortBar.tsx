@@ -2,7 +2,7 @@ import ArrowsUpDown from "./ArrowsUpDown";
 
 const ProductSortBar2 = () => {
   return (
-    <div className="bg-gray13 dark:bg-black1 border-b border-gray12 text-gray9">
+    <div className="bg-gray13 dark:bg-black1 border-b border-gray12 text-gray9 dark:text-gray13">
       {/* Desktop */}
       <div className="hidden xl:grid xl:grid-cols-[auto_1fr_100px_100px_80px_130px_130px_110px_auto] 2xl:grid-cols-[auto_1fr_120px_120px_100px_150px_130px_130px_auto] gap-0 items-center">
         <div className="p-3.5">
@@ -50,7 +50,7 @@ const ProductSortBar2 = () => {
           <input className="accent-blue2 cursor-pointer" type="checkbox" />
         </div>
         <div className="flex-1 flex p-3 items-center justify-between min-w-0">
-          <h6>Product</h6>
+          <h6 className="dark:text-gray13">Product</h6>
           <ArrowsUpDown />
         </div>
       </div>

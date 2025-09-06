@@ -17,7 +17,6 @@ const ProductTable = () => {
 
   const handleCategorySelect = (category: Category) => {
     setActiveCategory(category.name);
-    console.log("Selected category:", category.name);
   };
 
   const categoriesWithActive = categories.map((category) => ({

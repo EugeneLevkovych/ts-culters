@@ -137,14 +137,14 @@ const ProductItem = ({ product }: ProductProps) => {
 
         <div
           onClick={() => setIsOpen(!isOpen)}
-          className="w-8 h-7 flex justify-center items-center bg-gray13 rounded-lg m-4 cursor-pointer"
+          className="w-8 h-7 flex justify-center items-center bg-gray13 dark:bg-gray11 rounded-lg m-4 cursor-pointer"
         >
           {!isOpen ? (
-            <svg className="size-5 stroke-gray7 fill-transparent">
+            <svg className="size-5 stroke-gray7 dark:stroke-gray13 fill-transparent">
               <use href="./sprite.svg#icon-arrow-down-simple"></use>
             </svg>
           ) : (
-            <svg className="size-5 stroke-gray7 fill-transparent">
+            <svg className="size-5 stroke-gray7 dark:stroke-gray13 fill-transparent">
               <use href="./sprite.svg#icon-arrow-up-simple"></use>
             </svg>
           )}

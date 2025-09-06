@@ -18,11 +18,11 @@ const CategoryTabs: React.FC<CategoryTabsProps> = ({
           key={category.id}
           onClick={() => onCategorySelect && onCategorySelect(category)}
           className={`
-            flex-1 px-3 py-2 rounded-lg font-bold text-sm leading-[1.5] text-gray2 transition-all duration-200 cursor-pointer
+            flex-1 px-3 py-2 rounded-lg font-bold text-sm leading-[1.5] transition-all duration-200 cursor-pointer
             ${
               category.active
                 ? "bg-blue4 text-blue2"
-                : "text-gray2 hover:bg-gray-100"
+                : "text-gray2 dark:text-gray15 hover:bg-blue4"
             }
           `}
         >
