@@ -4,8 +4,8 @@ import Logo from "../components/Logo";
 
 const LoginPage = () => {
   return (
-    <div className="flex">
-      <div className="w-1/2 px-22.5 py-[207.5px]">
+    <div className="lg:flex">
+      <div className="lg:w-1/2 px-5 lg:px-22.5 py-12 lg:py-[207.5px]">
         <Logo />
         <h3 className="font-semibold text-3xl leading-[1.5] text-gray1 mb-2">
           Sign Up

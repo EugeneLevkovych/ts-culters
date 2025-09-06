@@ -35,9 +35,9 @@ const Form = () => {
       <label className="form-text text-gray1 mb-1.5" htmlFor="email">
         email
       </label>
-      <div className="relative mb-4">
+      <div className="relative mb-4 group">
         <input
-          className="w-full text-sm leading-[1.5] border border-gray4 my-placeholder placeholder:text-gray2 px-4 py-[15.5px] rounded-xl focus:border-blue2 focus:ring-1 focus:ring-blue2 outline-none"
+          className="w-full text-sm leading-[1.5] border border-gray4 my-placeholder placeholder:text-gray2 px-4 py-[15.5px] rounded-xl focus:border-blue2 focus:ring-1 outline-none"
           id="email"
           type="email"
           placeholder="email"
@@ -45,14 +45,14 @@ const Form = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <svg className="absolute top-4 right-4 size-6 fill-transparent stroke-gray4">
+        <svg className="absolute top-4 right-4 size-6 fill-transparent stroke-gray4 group-focus-within:stroke-blue2">
           <use href="./sprite.svg#icon-check-circle"></use>
         </svg>
       </div>
       <label className="form-text text-gray1 mb-1.5" htmlFor="password">
         password
       </label>
-      <div className="relative mb-4">
+      <div className="relative mb-4 group">
         <input
           className="w-full text-sm leading-[1.5] border border-gray4 my-placeholder placeholder:text-gray2 px-4 py-[15.5px] rounded-xl"
           id="password"
@@ -62,7 +62,7 @@ const Form = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <svg className="absolute top-4 right-4 size-6 fill-transparent stroke-gray4">
+        <svg className="absolute top-4 right-4 size-6 fill-transparent stroke-gray4 group-focus-within:stroke-blue2">
           <use href="./sprite.svg#icon-eye-hidden"></use>
         </svg>
       </div>

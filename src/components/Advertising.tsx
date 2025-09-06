@@ -2,7 +2,7 @@ import DashboardImg from "../assets/dashboard-img.jpg";
 
 const Advertising = () => {
   return (
-    <div className="w-1/2  bg-blue1 py-50 px-14">
+    <div className="hidden lg:block w-1/2 bg-blue1 py-50 px-14">
       <img
         className="w-full h-108 rounded-3xl mb-7"
         src={DashboardImg}

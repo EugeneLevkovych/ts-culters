@@ -53,7 +53,7 @@ const ProductSelect = () => {
 
               <button
                 onClick={() => handleCategoryClick(category.name)}
-                className={`w-full text-left px-4 py-3 pl-12 hover:bg-gray8 transition-colors duration-150 cursor-pointer ${
+                className={`w-full text-left px-4 py-3 pl-12 hover:bg-blue4 transition-colors duration-150 cursor-pointer ${
                   selectedCategory === category.name
                     ? "text-blue1 font-medium"
                     : "category-text"
