@@ -1,3 +1,4 @@
+import { useDarkMode } from "../hooks/useDarkMode";
 import Admin from "./Admin";
 import Company from "./Company";
 import DarkModeToggle from "./DarkModeToggle";
@@ -6,6 +7,8 @@ import ProductSelect from "./ProductSelect";
 import SimpleSelect from "./SimpleSelect";
 
 const SideBar = () => {
+  const [isDark, setIsDark] = useDarkMode();
+
   return (
     <div className="hidden lg:block w-70 flex-shrink-0 px-4 py-8">
       <div className="flex justify-between items-center w-full mb-11">
@@ -27,7 +30,7 @@ const SideBar = () => {
         <h5 className="text-sm leading-[1.5] uppercase px-2">tools</h5>
         <SimpleSelect title="Account & Settings" icon="settings" />
         <SimpleSelect title="Help" icon="help" />
-        <DarkModeToggle />
+        <DarkModeToggle isDark={isDark} onToggle={setIsDark} />
       </div>
       <div className="flex justify-between">
         <Admin />

@@ -28,7 +28,11 @@ body {
   font-display: swap;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
+  --color-black1: #101011;
+  --color-black2: #1a1a1b;
   --color-white1: #d1d1d1;
   --color-blue1: #1154d4;
   --color-blue2: #1a71f6;

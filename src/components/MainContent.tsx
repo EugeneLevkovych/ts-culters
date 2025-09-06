@@ -6,7 +6,7 @@ interface MainContentProps {
 
 const MainContent = ({ handleLogout }: MainContentProps) => {
   return (
-    <div className="p-8 bg-gray8">
+    <div className="p-8 bg-gray8 dark:bg-black1">
       <div className="flex justify-between items-center mb-5.5">
         <div>
           <h2 className="text-3xl font-semibold leading-[1.3] text-gray9">

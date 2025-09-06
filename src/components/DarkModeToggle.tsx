@@ -1,21 +1,14 @@
-import { useState } from "react";
-
 interface DarkModeToggleProps {
+  isDark: boolean;
   onToggle?: (isDark: boolean) => void;
-  initialValue?: boolean;
 }
 
-const DarkModeToggle = ({
-  onToggle,
-  initialValue = false,
-}: DarkModeToggleProps) => {
-  const [isDark, setIsDark] = useState(initialValue);
-
+const DarkModeToggle = ({ isDark, onToggle }: DarkModeToggleProps) => {
   const handleToggle = (e: React.MouseEvent) => {
     e.stopPropagation();
-    const newValue = !isDark;
-    setIsDark(newValue);
-    onToggle?.(newValue);
+    if (onToggle) {
+      onToggle(!isDark);
+    }
   };
 
   return (
