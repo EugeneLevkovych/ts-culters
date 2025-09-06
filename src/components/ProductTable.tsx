@@ -26,7 +26,7 @@ const ProductTable = () => {
   }));
 
   return (
-    <div className="border-2 rounded-3xl border-gray12 p-6 bg-white">
+    <div className="border-2 rounded-3xl border-gray12 p-6 bg-white dark:bg-black2">
       <div className="flex flex-col-reverse md:flex-col">
         <div className="flex justify-between mb-6">
           <Input placeholder="Search for id, name Customer" width="400px" />

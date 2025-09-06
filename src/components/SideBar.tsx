@@ -10,7 +10,7 @@ const SideBar = () => {
   const [isDark, setIsDark] = useDarkMode();
 
   return (
-    <div className="hidden lg:block w-70 flex-shrink-0 px-4 py-8">
+    <div className="hidden lg:block w-70 flex-shrink-0 px-4 py-8 dark:bg-black2">
       <div className="flex justify-between items-center w-full mb-11">
         <Logo size="small" />
         <svg className="size-6">
