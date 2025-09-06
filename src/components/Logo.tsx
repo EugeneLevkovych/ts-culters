@@ -1,4 +1,4 @@
-import logoImg from "../assets/logo 18.png";
+import logoImg from "../assets/logo.png";
 
 type LogoSize = "small" | "large";
 

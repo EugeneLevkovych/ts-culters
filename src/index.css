@@ -74,6 +74,9 @@ body {
     font-size: 14px;
     line-height: 1.5;
   }
+  .dark &::placeholder {
+    color: var(--color-gray13);
+  }
 }
 
 @utility heading {

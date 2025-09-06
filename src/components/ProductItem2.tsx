@@ -6,8 +6,44 @@ interface ProductProps {
   product: Product;
 }
 
-const ProductItem = ({ product }: ProductProps) => {
+const ProductItem2 = ({ product }: ProductProps) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const details = [
+    { label: "Price", value: `$${product.price.toFixed(2)}` },
+    { label: "QTY", value: product.qty },
+    { label: "Date", value: product.date },
+    {
+      label: "Status",
+      value: (
+        <div
+          className={`h-7.5 px-2.5 py-1.5 ${
+            product.status === "Out of Stock"
+              ? "bg-red2 text-red1"
+              : "bg-green2 text-green1"
+          } font-medium text-xs leading-[1.4] rounded-[10px]`}
+        >
+          {product.status}
+        </div>
+      ),
+    },
+    {
+      label: "Action",
+      value: (
+        <div className="flex gap-4">
+          <svg className="size-6 stroke-gray7 dark:stroke-gray13 fill-transparent">
+            <use href="./sprite.svg#icon-eye-open"></use>
+          </svg>
+          <svg className="size-6 stroke-gray7 dark:stroke-gray13 fill-transparent">
+            <use href="./sprite.svg#icon-edit"></use>
+          </svg>
+          <svg className="size-6 stroke-gray7 dark:stroke-gray13 fill-transparent">
+            <use href="./sprite.svg#icon-delete"></use>
+          </svg>
+        </div>
+      ),
+    },
+  ];
 
   return (
     <div className="border-b border-gray13 text-sm leading-[1.5] text-gray7 dark:text-gray13">
@@ -16,7 +52,6 @@ const ProductItem = ({ product }: ProductProps) => {
         <div>
           <input className="accent-blue2 cursor-pointer" type="checkbox" />
         </div>
-
         <div>
           <div className="flex items-center gap-2">
             <img className="h-10" src={productImg} alt="product" />
@@ -28,23 +63,18 @@ const ProductItem = ({ product }: ProductProps) => {
             </div>
           </div>
         </div>
-
         <div>
           <p>${product.price.toFixed(2)}</p>
         </div>
-
         <div>
           <p>{product.size}</p>
         </div>
-
         <div>
           <p>{product.qty}</p>
         </div>
-
         <div>
           <p>{product.date}</p>
         </div>
-
         <div>
           <div
             className={`inline-block h-7.5 px-2.5 py-1.5 ${
@@ -56,7 +86,6 @@ const ProductItem = ({ product }: ProductProps) => {
             {product.status}
           </div>
         </div>
-
         <div className="flex gap-4 justify-center">
           <svg className="size-6 stroke-gray7 dark:stroke-gray13 fill-transparent">
             <use href="./sprite.svg#icon-eye-open"></use>
@@ -76,7 +105,6 @@ const ProductItem = ({ product }: ProductProps) => {
           <div className="mr-3">
             <input className="accent-blue2 cursor-pointer" type="checkbox" />
           </div>
-
           <div className="flex-1">
             <div className="flex items-center gap-2">
               <img className="h-10" src={productImg} alt="product" />
@@ -87,54 +115,23 @@ const ProductItem = ({ product }: ProductProps) => {
                 <div className="text-sm leading-[1.5]">{product.name}</div>
               </div>
             </div>
-
             <div
               className={`text-sm leading-[1.5] transition-all duration-300 ease-in-out overflow-hidden ${
                 isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
               } space-y-3`}
             >
-              <div className="flex gap-4 pt-3">
-                <p className="w-15">Price</p>
-                <p>${product.price.toFixed(2)}</p>
-              </div>
-              <div className="flex gap-4">
-                <p className="w-15">QTY</p>
-                <p>{product.qty}</p>
-              </div>
-              <div className="flex gap-4">
-                <p className="w-15">Date</p>
-                <p>{product.date}</p>
-              </div>
-              <div className="flex gap-4">
-                <p className="w-15">Status</p>
+              {details.map((detail, index) => (
                 <div
-                  className={`h-7.5 px-2.5 py-1.5 ${
-                    product.status === "Out of Stock"
-                      ? "bg-red2 text-red1"
-                      : "bg-green2 text-green1"
-                  } font-medium text-xs leading-[1.4] rounded-[10px]`}
+                  key={index}
+                  className={`flex gap-4 ${index === 0 ? "pt-3" : ""}`}
                 >
-                  {product.status}
+                  <p className="w-15">{detail.label}</p>
+                  {detail.value}
                 </div>
-              </div>
-              <div className="flex gap-4">
-                <p className="w-15">Action</p>
-                <div className="flex gap-4">
-                  <svg className="size-6 stroke-gray7 dark:stroke-gray13 fill-transparent">
-                    <use href="./sprite.svg#icon-eye-open"></use>
-                  </svg>
-                  <svg className="size-6 stroke-gray7 dark:stroke-gray13 fill-transparent">
-                    <use href="./sprite.svg#icon-edit"></use>
-                  </svg>
-                  <svg className="size-6 stroke-gray7 dark:stroke-gray13 fill-transparent">
-                    <use href="./sprite.svg#icon-delete"></use>
-                  </svg>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
-
         <div
           onClick={() => setIsOpen(!isOpen)}
           className="w-8 h-7 flex justify-center items-center bg-gray13 dark:bg-gray11 rounded-lg m-4 cursor-pointer"
@@ -154,4 +151,4 @@ const ProductItem = ({ product }: ProductProps) => {
   );
 };
 
-export default ProductItem;
+export default ProductItem2;

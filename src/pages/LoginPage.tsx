@@ -1,11 +1,12 @@
 import Form from "../components/Form";
 import Advertising from "../components/Advertising";
 import Logo from "../components/Logo";
+import Google from "../components/Google";
 
 const LoginPage = () => {
   return (
-    <div className="lg:flex">
-      <div className="lg:w-1/2 px-5 lg:px-22.5 py-12 lg:py-[207.5px]">
+    <div className="lg:flex dark:[&_*]:text-gray13">
+      <div className="lg:w-1/2 px-5 lg:px-22.5 py-12 lg:py-[207.5px] dark:bg-black2">
         <Logo />
         <h3 className="font-semibold text-3xl leading-[1.5] text-gray1 mb-2">
           Sign Up
@@ -14,17 +15,7 @@ const LoginPage = () => {
           Leo eget quam dui in posuere nulla, email === test@example.com
           password === 123456
         </p>
-        <div className="h-11 flex justify-center items-center border-2  border-blue2 rounded-xl mb-6">
-          <div className="flex gap-1.5">
-            <svg className="size-6">
-              <use href="./sprite.svg#icon-google"></use>
-            </svg>
-            <a className="form-text" href="#">
-              Sign In with Google
-            </a>
-          </div>
-        </div>
-
+        <Google />
         <p className="flex items-center mb-6 font-bold text-xs leading-[1.4] text-gray1">
           <span className="flex-grow h-px bg-blue1"></span>
           <span className="px-3">or</span>
