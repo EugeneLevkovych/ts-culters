@@ -97,14 +97,6 @@ body {
   margin-bottom: 4px;
 }
 
-@utility product-text {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.42;
-  letter-spacing: 0.01em;
-  color: #323130;
-}
-
 @utility category-text {
   font-size: 14px;
   line-height: 1.5;
