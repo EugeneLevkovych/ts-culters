@@ -10,7 +10,7 @@ const Checkbox = () => {
       className={`
         size-5 rounded border-2 
         flex items-center justify-center 
-        transition-colors duration-200
+        transition-colors
         ${checked ? "bg-blue4 border-blue2" : "bg-white border-gray7"}
   ${
     checked

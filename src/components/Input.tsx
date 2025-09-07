@@ -11,6 +11,7 @@ const Input = ({ width, placeholder }: InputProps) => {
     >
       <input
         type="text"
+        name="search"
         placeholder={placeholder}
         className="w-full border border-gray5 rounded-xl my-placeholder placeholder:text-gray6 px-4 py-[7px]"
       />
