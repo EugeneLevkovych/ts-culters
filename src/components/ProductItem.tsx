@@ -2,6 +2,7 @@ import { useState } from "react";
 import productImg from "../assets/produkt.png";
 import type { Product } from "../types/productType";
 import ArrowDown from "./ArrowDown";
+import ArrowUp from "./ArrowUp";
 
 interface ProductProps {
   product: Product;
@@ -143,9 +144,7 @@ const ProductItem = ({ product }: ProductProps) => {
           {!isOpen ? (
             <ArrowDown width="20px" height="20px" />
           ) : (
-            <svg className="size-5 stroke-gray7 dark:stroke-gray13 fill-transparent">
-              <use href="./sprite.svg#icon-arrow-up-simple"></use>
-            </svg>
+            <ArrowUp width="20px" height="20px" />
           )}
         </div>
       </div>

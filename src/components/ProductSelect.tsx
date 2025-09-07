@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { productCategories } from "../data/productData";
+import ArrowDown from "./ArrowDown";
+import ArrowUp from "./ArrowUp";
 
 const ProductSelect = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -18,10 +20,10 @@ const ProductSelect = () => {
     <div className="w-62 rounded-xl overflow-hidden dark:text-gray5">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between p-2 hover:font-bold hover:bg-blue4 transition-colors duration-200 cursor-pointer"
+        className="w-full flex items-center justify-between p-2 hover:font-bold hover:bg-blue4 hover:[&>*>*]:stroke-gray7 hover:text-gray7 transition-colors duration-200 cursor-pointer"
       >
         <div className="flex items-center gap-2">
-          <svg className="size-6 stroke-gray7 fill-transparent">
+          <svg className="size-6 stroke-gray10 dark:stroke-gray5 fill-transparent">
             <use href="./sprite.svg#icon-store"></use>
           </svg>
           <h5 className="text-sm leading-[1.5] hover:text-gray7 dark:hover:text-gray11 hover:font-bold">
@@ -29,13 +31,9 @@ const ProductSelect = () => {
           </h5>
         </div>
         {isOpen ? (
-          <svg className="size-6 stroke-gray7 fill-transparent">
-            <use href="./sprite.svg#icon-arrow-up-simple"></use>
-          </svg>
+          <ArrowUp width="24px" height="24px" />
         ) : (
-          <svg className="size-6 stroke-gray7 fill-transparent">
-            <use href="./sprite.svg#icon-arrow-down-simple"></use>
-          </svg>
+          <ArrowDown width="24px" height="24px" />
         )}
       </button>
 
