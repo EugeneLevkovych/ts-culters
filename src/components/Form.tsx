@@ -69,7 +69,7 @@ const Form = () => {
 
       <div className="flex justify-between mb-6">
         <div className="flex gap-1">
-          <input type="checkbox" id="remember" />
+          <input className="cursor-pointer" type="checkbox" id="remember" />
           <label className="form-text text-gray3" htmlFor="remember">
             remember me
           </label>
@@ -79,7 +79,7 @@ const Form = () => {
         </a>
       </div>
       <button
-        className="form-text text-white bg-blue2 rounded-xl py-3"
+        className="form-text text-white bg-blue2 rounded-xl py-3 cursor-pointer"
         type="submit"
       >
         {isLoading ? "Signing In..." : "Sign In"}

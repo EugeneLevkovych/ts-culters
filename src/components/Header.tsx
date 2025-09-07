@@ -7,7 +7,7 @@ const Header = () => {
     <div className="flex justify-between px-8 py-[1.6rem] dark:bg-black2">
       <Input placeholder="Search product" width="300px" />
       <div className="flex gap-4">
-        <div className="relative hidden md:flex justify-center items-center rounded-lg size-9 bg-gray13 dark:bg-gray11">
+        <div className="relative hidden md:flex justify-center items-center rounded-lg size-9 bg-gray13 dark:bg-gray11 cursor-pointer">
           <svg className="size-6 stroke-gray7 dark:stroke-gray13 fill-transparent">
             <use href="./sprite.svg#icon-mail"></use>
           </svg>
@@ -15,7 +15,7 @@ const Header = () => {
             2
           </div>
         </div>
-        <div className="relative hidden md:flex justify-center items-center rounded-lg size-9 bg-gray13 dark:bg-gray11">
+        <div className="relative hidden md:flex justify-center items-center rounded-lg size-9 bg-gray13 dark:bg-gray11 cursor-pointer">
           <svg className="size-6 stroke-gray7 dark:stroke-gray13 fill-transparent">
             <use href="./sprite.svg#icon-notifications"></use>
           </svg>
