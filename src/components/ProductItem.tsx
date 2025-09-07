@@ -3,6 +3,8 @@ import productImg from "../assets/produkt.png";
 import type { Product } from "../types/productType";
 import ArrowDown from "./ArrowDown";
 import ArrowUp from "./ArrowUp";
+import CellItemAction from "./CellItemAction";
+import CellItemStatus from "./CellItemStatus";
 
 interface ProductProps {
   product: Product;
@@ -48,28 +50,10 @@ const ProductItem = ({ product }: ProductProps) => {
         </div>
 
         <div>
-          <div
-            className={`inline-block h-7.5 px-2.5 py-1.5 ${
-              product.status === "Out of Stock"
-                ? "bg-red2 text-red1"
-                : "bg-green2 text-green1"
-            } font-medium text-xs leading-[1.4] rounded-[10px]`}
-          >
-            {product.status}
-          </div>
+          <CellItemStatus status={product.status} />
         </div>
 
-        <div className="flex gap-4 justify-center">
-          <svg className="size-6 stroke-gray7 dark:stroke-gray13 fill-transparent">
-            <use href="./sprite.svg#icon-eye-open"></use>
-          </svg>
-          <svg className="size-6 stroke-gray7 dark:stroke-gray13 fill-transparent">
-            <use href="./sprite.svg#icon-edit"></use>
-          </svg>
-          <svg className="size-6 stroke-gray7 dark:stroke-gray13 fill-transparent">
-            <use href="./sprite.svg#icon-delete"></use>
-          </svg>
-        </div>
+        <CellItemAction />
       </div>
 
       {/* Mobile */}
@@ -109,29 +93,11 @@ const ProductItem = ({ product }: ProductProps) => {
               </div>
               <div className="flex gap-4">
                 <p className="w-15">Status</p>
-                <div
-                  className={`h-7.5 px-2.5 py-1.5 ${
-                    product.status === "Out of Stock"
-                      ? "bg-red2 text-red1"
-                      : "bg-green2 text-green1"
-                  } font-medium text-xs leading-[1.4] rounded-[10px]`}
-                >
-                  {product.status}
-                </div>
+                <CellItemStatus status={product.status} />
               </div>
               <div className="flex gap-4">
                 <p className="w-15">Action</p>
-                <div className="flex gap-4">
-                  <svg className="size-6 stroke-gray7 dark:stroke-gray13 fill-transparent">
-                    <use href="./sprite.svg#icon-eye-open"></use>
-                  </svg>
-                  <svg className="size-6 stroke-gray7 dark:stroke-gray13 fill-transparent">
-                    <use href="./sprite.svg#icon-edit"></use>
-                  </svg>
-                  <svg className="size-6 stroke-gray7 dark:stroke-gray13 fill-transparent">
-                    <use href="./sprite.svg#icon-delete"></use>
-                  </svg>
-                </div>
+                <CellItemAction />
               </div>
             </div>
           </div>

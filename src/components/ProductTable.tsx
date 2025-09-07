@@ -1,5 +1,4 @@
 import { products } from "../data/productData";
-
 import Input from "./Input";
 import CategoryTabs from "./CategoryTabs";
 import { categories } from "../data/categoryData";
