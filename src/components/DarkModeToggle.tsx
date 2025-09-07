@@ -23,7 +23,7 @@ const DarkModeToggle = ({ isDark, onToggle }: DarkModeToggleProps) => {
         className={`
           relative inline-flex h-5 w-9 items-center rounded-full 
           transition-colors duration-200 ease-in-out focus:outline-none cursor-pointer
-          ${isDark ? "bg-blue1" : "bg-gray4"}
+          ${isDark ? "bg-gray11" : "bg-gray4"}
         `}
         aria-label="Toggle dark mode"
       >
@@ -31,7 +31,7 @@ const DarkModeToggle = ({ isDark, onToggle }: DarkModeToggleProps) => {
           className={`
             inline-block size-4.5 transform rounded-full bg-white 
             transition-transform duration-200 ease-in-out shadow-sm
-            ${isDark ? "translate-x-4" : "translate-x-0.5"}
+            ${isDark ? "translate-x-4 !bg-blue2" : "translate-x-0.5"}
           `}
         />
       </button>

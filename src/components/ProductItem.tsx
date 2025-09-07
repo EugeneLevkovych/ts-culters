@@ -5,6 +5,7 @@ import ArrowDown from "./ArrowDown";
 import ArrowUp from "./ArrowUp";
 import CellItemAction from "./CellItemAction";
 import CellItemStatus from "./CellItemStatus";
+import Checkbox from "./Checkbox";
 
 interface ProductProps {
   product: Product;
@@ -18,7 +19,7 @@ const ProductItem = ({ product }: ProductProps) => {
       {/* Desktop */}
       <div className="hidden xl:grid xl:grid-cols-[auto_1fr_100px_100px_80px_130px_130px_110px_auto] 2xl:grid-cols-[auto_1fr_120px_120px_100px_150px_130px_130px_auto] gap-0 items-center [&>*]:p-3">
         <div>
-          <input className="accent-blue2 cursor-pointer" type="checkbox" />
+          <Checkbox />
         </div>
 
         <div>
@@ -60,7 +61,7 @@ const ProductItem = ({ product }: ProductProps) => {
       <div className="flex justify-between xl:hidden">
         <div className="flex p-4">
           <div className="mr-3">
-            <input className="accent-blue2 cursor-pointer" type="checkbox" />
+            <Checkbox />
           </div>
 
           <div className="flex-1">
