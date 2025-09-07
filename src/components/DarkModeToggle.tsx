@@ -13,7 +13,7 @@ const DarkModeToggle = ({ isDark, onToggle }: DarkModeToggleProps) => {
 
   return (
     <div className="flex gap-2 items-center p-2 rounded-xl hover:bg-blue4">
-      <svg className="size-6 stroke-gray7 fill-transparent">
+      <svg className="size-6 stroke-gray10 dark:stroke-gray5 fill-transparent">
         <use href="./sprite.svg#icon-moon"></use>
       </svg>
       <p className="font-bold text-sm leading-[1.5] flex-1">Dark Mode</p>

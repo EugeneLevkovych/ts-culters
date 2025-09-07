@@ -2,7 +2,7 @@ import ArrowsLeftRight from "./ArrowsLeftRight";
 
 const PagesCountBar = () => {
   return (
-    <div className="lg:flex justify-between">
+    <div className="lg:flex justify-between dark:[&>*]:text-gray15">
       <p className="text-sm leading-[1.5] text-gray2 mb-4 lg:mb-0">
         <span className="font-bold text-blue2">1</span>-10 of 13 Pages
       </p>
@@ -11,7 +11,7 @@ const PagesCountBar = () => {
           <p className="pr-3">The page on</p>
           <div className="h-7 flex items-center border rounded-lg border-gray15 px-1.5">
             <p>1</p>
-            <svg className="size-5 fill-gray7">
+            <svg className="size-4 fill-gray7 dark:fill-gray13">
               <use href="./sprite.svg#icon-sorter-down"></use>
             </svg>
           </div>
