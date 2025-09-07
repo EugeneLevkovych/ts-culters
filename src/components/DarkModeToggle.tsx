@@ -16,9 +16,7 @@ const DarkModeToggle = ({ isDark, onToggle }: DarkModeToggleProps) => {
       <svg className="size-6 stroke-gray7 fill-transparent">
         <use href="./sprite.svg#icon-moon"></use>
       </svg>
-      <p className="font-bold text-sm leading-[1.5] text-gray7 flex-1">
-        Dark Mode
-      </p>
+      <p className="font-bold text-sm leading-[1.5] flex-1">Dark Mode</p>
 
       <button
         onClick={handleToggle}

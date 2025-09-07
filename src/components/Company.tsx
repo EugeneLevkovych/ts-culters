@@ -5,8 +5,10 @@ const Company = () => {
     <div className="flex gap-2 border border-gray12 rounded-xl p-2 mb-8">
       <img className="h-10" src={storeImg} alt="store" />
       <div>
-        <p className="text-xs leading-[1.4] text-gray5 mb-[2px]">Company</p>
-        <p className="font-bold text-sm leading-[1.5] text-gray5">
+        <p className="text-xs leading-[1.4] text-gray5 dark:text-gray4 mb-[2px]">
+          Company
+        </p>
+        <p className="font-bold text-sm leading-[1.5] text-gray7 dark:text-gray13">
           Kanky Store
         </p>
       </div>

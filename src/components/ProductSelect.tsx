@@ -15,16 +15,16 @@ const ProductSelect = () => {
   };
 
   return (
-    <div className="w-62 rounded-xl overflow-hidden">
+    <div className="w-62 rounded-xl overflow-hidden dark:text-gray5">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between p-2 hover:bg-blue4 transition-colors duration-200 cursor-pointer"
+        className="w-full flex items-center justify-between p-2 hover:font-bold hover:bg-blue4 transition-colors duration-200 cursor-pointer"
       >
         <div className="flex items-center gap-2">
           <svg className="size-6 stroke-gray7 fill-transparent">
             <use href="./sprite.svg#icon-store"></use>
           </svg>
-          <h5 className="font-bold text-sm leading-[1.5] text-gray7">
+          <h5 className="text-sm leading-[1.5] hover:text-gray7 dark:hover:text-gray11 hover:font-bold">
             Product ({totalProducts})
           </h5>
         </div>

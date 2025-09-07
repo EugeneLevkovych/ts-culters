@@ -16,7 +16,7 @@ const Logo = ({ size = "large" }: LogoProps) => {
     large: {
       container: "flex mb-12",
       image: "h-12",
-      text: "font-semibold text-[2.75rem] leading-[1.1] text-gray3 mb-2",
+      text: "font-semibold text-[2.75rem] leading-[1.1] mb-2",
     },
   };
 
@@ -25,7 +25,7 @@ const Logo = ({ size = "large" }: LogoProps) => {
   return (
     <div className={classes.container}>
       <img className={classes.image} src={logoImg} alt="logo" />
-      <h1 className={classes.text}>Culters</h1>
+      <h1 className={`${classes.text} text-gray7 dark:text-gray13`}>Culters</h1>
     </div>
   );
 };
