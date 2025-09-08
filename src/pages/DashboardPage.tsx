@@ -16,7 +16,7 @@ const DashboardPage = () => {
       <SideBar />
       <div className="flex-1 flex flex-col min-w-0">
         <Header />
-        <MainContent handleLogout={handleLogout} />
+        <MainContent onClick={handleLogout} />
       </div>
     </div>
   );

@@ -1,10 +1,11 @@
+import ButtonBlue from "./ButtonBlue";
 import ProductTable from "./ProductTable";
 
 interface MainContentProps {
-  handleLogout: () => void;
+  onClick: () => void;
 }
 
-const MainContent = ({ handleLogout }: MainContentProps) => {
+const MainContent = ({ onClick }: MainContentProps) => {
   return (
     <div className="p-8 bg-gray8 dark:bg-black1">
       <div className="flex justify-between items-center mb-5.5">
@@ -24,12 +25,7 @@ const MainContent = ({ handleLogout }: MainContentProps) => {
             <p className="text-gray10">Sneakers</p>
           </div>
         </div>
-        <button
-          onClick={handleLogout}
-          className="px-6 py-3 bg-blue2 text-white rounded-xl font-semibold hover:bg-blue1 transition-colors cursor-pointer"
-        >
-          Exit
-        </button>
+        <ButtonBlue text="Exit" onClick={onClick} />
       </div>
       <ProductTable />
     </div>
