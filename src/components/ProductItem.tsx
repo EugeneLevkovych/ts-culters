@@ -17,7 +17,7 @@ const ProductItem = ({ product }: ProductProps) => {
   return (
     <div className="border-b border-gray13 text-sm leading-[1.5] text-gray7 dark:text-gray13">
       {/* Desktop */}
-      <div className="hidden xl:grid xl:grid-cols-[auto_1fr_100px_100px_80px_130px_130px_110px_auto] 2xl:grid-cols-[auto_1fr_120px_120px_100px_150px_130px_130px_auto] gap-0 items-center [&>*]:p-3">
+      <div className="hidden xl:grid xl:grid-cols-[auto_1fr_100px_100px_80px_130px_130px_110px_auto] 2xl:grid-cols-[auto_1fr_120px_120px_100px_150px_130px_130px_auto] gap-0 [&>*]:p-3">
         <div>
           <Checkbox />
         </div>
