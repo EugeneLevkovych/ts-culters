@@ -64,26 +64,26 @@ const ProductItem = ({ product }: ProductProps) => {
             <div
               className={`text-sm leading-[1.5] transition-all duration-300 ease-in-out overflow-hidden ${
                 isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-              } pt-3 space-y-3 [&>*]:flex [&>*]:gap-4`}
+              } pt-3 space-y-3 [&>*]:flex [&>*]:gap-4 [&>*>p:first-child]:w-15`}
             >
               <div>
-                <p className="w-15">Price</p>
+                <p>Price</p>
                 <p>${product.price.toFixed(2)}</p>
               </div>
               <div>
-                <p className="w-15">QTY</p>
+                <p>QTY</p>
                 <p>{product.qty}</p>
               </div>
               <div>
-                <p className="w-15">Date</p>
+                <p>Date</p>
                 <p>{product.date}</p>
               </div>
               <div>
-                <p className="w-15">Status</p>
+                <p>Status</p>
                 <CellItemStatus status={product.status} />
               </div>
               <div>
-                <p className="w-15">Action</p>
+                <p>Action</p>
                 <CellItemAction />
               </div>
             </div>
