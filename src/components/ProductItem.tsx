@@ -22,37 +22,23 @@ const ProductItem = ({ product }: ProductProps) => {
           <Checkbox />
         </div>
 
-        <div>
-          <div className="flex items-center gap-2">
-            <img className="h-10" src={productImg} alt="product" />
-            <div>
-              <div className="text-xs leading-[1.4] text-blue2">
-                {product.id}
-              </div>
-              <div className="text-sm leading-[1.5]">{product.name}</div>
-            </div>
+        <div className="flex items-center gap-2">
+          <img className="h-10" src={productImg} alt="product" />
+          <div>
+            <div className="text-xs leading-[1.4] text-blue2">{product.id}</div>
+            <div className="text-sm leading-[1.5]">{product.name}</div>
           </div>
         </div>
 
-        <div>
-          <p>${product.price.toFixed(2)}</p>
-        </div>
+        <p>${product.price.toFixed(2)}</p>
 
-        <div>
-          <p>{product.size}</p>
-        </div>
+        <p>{product.size}</p>
 
-        <div>
-          <p>{product.qty}</p>
-        </div>
+        <p>{product.qty}</p>
 
-        <div>
-          <p>{product.date}</p>
-        </div>
+        <p>{product.date}</p>
 
-        <div>
-          <CellItemStatus status={product.status} />
-        </div>
+        <CellItemStatus status={product.status} />
 
         <CellItemAction />
       </div>
@@ -78,25 +64,25 @@ const ProductItem = ({ product }: ProductProps) => {
             <div
               className={`text-sm leading-[1.5] transition-all duration-300 ease-in-out overflow-hidden ${
                 isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-              } space-y-3`}
+              } pt-3 space-y-3 [&>*]:flex [&>*]:gap-4`}
             >
-              <div className="flex gap-4 pt-3">
+              <div>
                 <p className="w-15">Price</p>
                 <p>${product.price.toFixed(2)}</p>
               </div>
-              <div className="flex gap-4">
+              <div>
                 <p className="w-15">QTY</p>
                 <p>{product.qty}</p>
               </div>
-              <div className="flex gap-4">
+              <div>
                 <p className="w-15">Date</p>
                 <p>{product.date}</p>
               </div>
-              <div className="flex gap-4">
+              <div>
                 <p className="w-15">Status</p>
                 <CellItemStatus status={product.status} />
               </div>
-              <div className="flex gap-4">
+              <div>
                 <p className="w-15">Action</p>
                 <CellItemAction />
               </div>
