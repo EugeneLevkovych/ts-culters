@@ -1,7 +1,7 @@
 import ArrowsUpDown from "./ArrowsUpDown";
 import Checkbox from "./Checkbox";
 
-const ProductSortBar2 = () => {
+const ProductSortBar = () => {
   return (
     <div className="bg-gray13 dark:bg-black1 border-b border-gray12 text-gray9 dark:text-gray13">
       {/* Desktop */}
@@ -59,4 +59,4 @@ const ProductSortBar2 = () => {
   );
 };
 
-export default ProductSortBar2;
+export default ProductSortBar;
